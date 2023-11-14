@@ -1,6 +1,6 @@
 {
   "name": "drump-icon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "author": "Nicolás Schönfeld",
   "main": "dist/index.js",
@@ -34,10 +34,10 @@
     "testEnvironment": "jsdom"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=18"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "size-limit": [
     {
