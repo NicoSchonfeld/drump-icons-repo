@@ -1,10 +1,10 @@
 {
-  "name": "drump-icons-npm",
-  "version": "0.1.0",
+  "name": "drump-icon",
+  "version": "0.1.1",
   "license": "MIT",
-  "author": "Nicolas Schonfeld",
+  "author": "Nicolás Schönfeld",
   "main": "dist/index.js",
-  "module": "dist/drump-icons-npm.esm.js",
+  "module": "dist/drump-icon.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -41,12 +41,32 @@
   },
   "size-limit": [
     {
-      "path": "dist/drump-icons-npm.cjs.production.min.js",
+      "path": "dist/drump-icon-npm.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/drump-icons-npm.esm.js",
+      "path": "dist/drump-icon-npm.esm.js",
       "limit": "10 KB"
     }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.0.0",
+    "@tsconfig/recommended": "^1.0.3",
+    "@tsconfig/vite-react": "^2.0.1",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "dts-cli": "^2.0.3",
+    "husky": "^8.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "size-limit": "^11.0.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "Drump",
+    "icon",
+    "Tailwind css",
+    "Css"
   ]
 }
