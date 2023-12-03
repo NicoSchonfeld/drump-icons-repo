@@ -1,6 +1,6 @@
 {
   "name": "drump-icon",
-  "version": "0.1.7",
+  "version": "0.1.11",
   "license": "MIT",
   "author": "Nicolás Schönfeld",
   "main": "dist/index.js",
@@ -65,8 +65,11 @@
   },
   "keywords": [
     "Drump",
-    "icon",
+    "icons",
     "Tailwind css",
-    "Css"
+    "Css",
+    "front-end",
+    "web",
+    "tool"
   ]
 }

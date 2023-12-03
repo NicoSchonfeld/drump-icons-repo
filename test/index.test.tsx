@@ -22,7 +22,7 @@ import {
   ArrowUturnLeftIcon,
   ArrowsOutIcon,
   AtIcon,
-  BellAlertSolidIcon,
+  BellAlertIcon,
   BoltIcon,
   BookIcon,
   CalendarIcon,
@@ -525,10 +525,10 @@ describe('CloudArrowIcon', () => {
   });
 });
 
-describe('BellAlertSolidIcon', () => {
+describe('BellAlertIcon', () => {
   it('renders without crashing', () => {
     const icon = document.createElement('div');
-    createRoot(icon).render(<BellAlertSolidIcon w={20} h={20} />);
+    createRoot(icon).render(<BellAlertIcon w={20} h={20} />);
   });
 });
 

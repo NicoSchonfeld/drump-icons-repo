@@ -22,7 +22,9 @@ Compatible with Tailwind css.
 import { UserIcon } from 'drump-icon';
 
 const App = () => {
-  return <UserIcon solid={false} w={24} h={24} className="text-white" />;
+  return (
+    <UserIcon w={24} h={24} color="white" className="bg-black p-2 rounded-md" />
+  );
 };
 ```
 
