@@ -1,6 +1,6 @@
 {
   "name": "drump-icon",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "license": "MIT",
   "author": "Nicolás Schönfeld",
   "main": "dist/index.js",

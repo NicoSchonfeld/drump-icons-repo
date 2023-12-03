@@ -1,1983 +1,3609 @@
 import * as React from 'react';
 
 type IconsType = {
-  solid: boolean;
-  w: string | any;
-  h: string | any;
+  w?: string | number | any;
+  h?: string | number | any;
+  color?: string | any;
 };
 type SvgType = React.SVGAttributes<HTMLOrSVGElement>;
 type Props = IconsType & SvgType;
 
-export const ArchiveBoxIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const MoreHorizontalIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z" />
-          <path
-            fillRule="evenodd"
-            d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.163 3.75A.75.75 0 0110 12h4a.75.75 0 010 1.5h-4a.75.75 0 01-.75-.75z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowbackLeftIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M9.53 2.47a.75.75 0 010 1.06L4.81 8.25H15a6.75 6.75 0 010 13.5h-3a.75.75 0 010-1.5h3a5.25 5.25 0 100-10.5H4.81l4.72 4.72a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M9.53 2.47a.75.75 0 010 1.06L4.81 8.25H15a6.75 6.75 0 010 13.5h-3a.75.75 0 010-1.5h3a5.25 5.25 0 100-10.5H4.81l4.72 4.72a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowDownIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowLeftIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M11.03 3.97a.75.75 0 010 1.06l-6.22 6.22H21a.75.75 0 010 1.5H4.81l6.22 6.22a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M11.03 3.97a.75.75 0 010 1.06l-6.22 6.22H21a.75.75 0 010 1.5H4.81l6.22 6.22a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowPointingInIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M3.22 3.22a.75.75 0 011.06 0l3.97 3.97V4.5a.75.75 0 011.5 0V9a.75.75 0 01-.75.75H4.5a.75.75 0 010-1.5h2.69L3.22 4.28a.75.75 0 010-1.06zm17.56 0a.75.75 0 010 1.06l-3.97 3.97h2.69a.75.75 0 010 1.5H15a.75.75 0 01-.75-.75V4.5a.75.75 0 011.5 0v2.69l3.97-3.97a.75.75 0 011.06 0zM3.75 15a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-2.69l-3.97 3.97a.75.75 0 01-1.06-1.06l3.97-3.97H4.5a.75.75 0 01-.75-.75zm10.5 0a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-2.69l3.97 3.97a.75.75 0 11-1.06 1.06l-3.97-3.97v2.69a.75.75 0 01-1.5 0V15z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M3.22 3.22a.75.75 0 011.06 0l3.97 3.97V4.5a.75.75 0 011.5 0V9a.75.75 0 01-.75.75H4.5a.75.75 0 010-1.5h2.69L3.22 4.28a.75.75 0 010-1.06zm17.56 0a.75.75 0 010 1.06l-3.97 3.97h2.69a.75.75 0 010 1.5H15a.75.75 0 01-.75-.75V4.5a.75.75 0 011.5 0v2.69l3.97-3.97a.75.75 0 011.06 0zM3.75 15a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-2.69l-3.97 3.97a.75.75 0 01-1.06-1.06l3.97-3.97H4.5a.75.75 0 01-.75-.75zm10.5 0a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-2.69l3.97 3.97a.75.75 0 11-1.06 1.06l-3.97-3.97v2.69a.75.75 0 01-1.5 0V15z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowPointingOutIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M15 3.75a.75.75 0 01.75-.75h4.5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0V5.56l-3.97 3.97a.75.75 0 11-1.06-1.06l3.97-3.97h-2.69a.75.75 0 01-.75-.75zm-12 0A.75.75 0 013.75 3h4.5a.75.75 0 010 1.5H5.56l3.97 3.97a.75.75 0 01-1.06 1.06L4.5 5.56v2.69a.75.75 0 01-1.5 0v-4.5zm11.47 11.78a.75.75 0 111.06-1.06l3.97 3.97v-2.69a.75.75 0 011.5 0v4.5a.75.75 0 01-.75.75h-4.5a.75.75 0 010-1.5h2.69l-3.97-3.97zm-4.94-1.06a.75.75 0 010 1.06L5.56 19.5h2.69a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75v-4.5a.75.75 0 011.5 0v2.69l3.97-3.97a.75.75 0 011.06 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M15 3.75a.75.75 0 01.75-.75h4.5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0V5.56l-3.97 3.97a.75.75 0 11-1.06-1.06l3.97-3.97h-2.69a.75.75 0 01-.75-.75zm-12 0A.75.75 0 013.75 3h4.5a.75.75 0 010 1.5H5.56l3.97 3.97a.75.75 0 01-1.06 1.06L4.5 5.56v2.69a.75.75 0 01-1.5 0v-4.5zm11.47 11.78a.75.75 0 111.06-1.06l3.97 3.97v-2.69a.75.75 0 011.5 0v4.5a.75.75 0 01-.75.75h-4.5a.75.75 0 010-1.5h2.69l-3.97-3.97zm-4.94-1.06a.75.75 0 010 1.06L5.56 19.5h2.69a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75v-4.5a.75.75 0 011.5 0v2.69l3.97-3.97a.75.75 0 011.06 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowRightIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowTrayIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 2.25a.75.75 0 01.75.75v11.69l3.22-3.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-4.5-4.5a.75.75 0 111.06-1.06l3.22 3.22V3a.75.75 0 01.75-.75zm-9 13.5a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V16.5a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V16.5a.75.75 0 01.75-.75z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 2.25a.75.75 0 01.75.75v11.69l3.22-3.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-4.5-4.5a.75.75 0 111.06-1.06l3.22 3.22V3a.75.75 0 01.75-.75zm-9 13.5a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V16.5a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V16.5a.75.75 0 01.75-.75z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ArrowUpIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M11.47 2.47a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06l-6.22-6.22V21a.75.75 0 01-1.5 0V4.81l-6.22 6.22a.75.75 0 11-1.06-1.06l7.5-7.5z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const BarsIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const BellAlertIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M5.85 3.5a.75.75 0 00-1.117-1 9.719 9.719 0 00-2.348 4.876.75.75 0 001.479.248A8.219 8.219 0 015.85 3.5zM19.267 2.5a.75.75 0 10-1.118 1 8.22 8.22 0 011.987 4.124.75.75 0 001.48-.248A9.72 9.72 0 0019.266 2.5z" />
-          <path
-            fillRule="evenodd"
-            d="M12 2.25A6.75 6.75 0 005.25 9v.75a8.217 8.217 0 01-2.119 5.52.75.75 0 00.298 1.206c1.544.57 3.16.99 4.831 1.243a3.75 3.75 0 107.48 0 24.583 24.583 0 004.83-1.244.75.75 0 00.298-1.205 8.217 8.217 0 01-2.118-5.52V9A6.75 6.75 0 0012 2.25zM9.75 18c0-.034 0-.067.002-.1a25.05 25.05 0 004.496 0l.002.1a2.25 2.25 0 11-4.5 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const BellIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const BellSlashIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M3.53 2.47a.75.75 0 00-1.06 1.06l18 18a.75.75 0 101.06-1.06l-18-18zM20.57 16.476c-.223.082-.448.161-.674.238L7.319 4.137A6.75 6.75 0 0118.75 9v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206z" />
-          <path
-            fillRule="evenodd"
-            d="M5.25 9c0-.184.007-.366.022-.546l10.384 10.384a3.751 3.751 0 01-7.396-1.119 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9.143 17.082a24.248 24.248 0 003.844.148m-3.844-.148a23.856 23.856 0 01-5.455-1.31 8.964 8.964 0 002.3-5.542m3.155 6.852a3 3 0 005.667 1.97m1.965-2.277L21 21m-4.225-4.225a23.81 23.81 0 003.536-1.003A8.967 8.967 0 0118 9.75V9A6 6 0 006.53 6.53m10.245 10.245L6.53 6.53M3 3l3.53 3.53"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ChatIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 001.28.53l4.184-4.183a.39.39 0 01.266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0012 2.25zM8.25 8.625a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zm2.625 1.125a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const CheckIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M20 6L9 17l-5-5" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M20 6L9 17l-5-5" />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ChevronLeftIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M15 18l-6-6 6-6" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M15 18l-6-6 6-6" />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ChevronRightIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M9 18l6-6-6-6" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M9 18l6-6-6-6" />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const ClipboardIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M10.5 3A1.501 1.501 0 009 4.5h6A1.5 1.5 0 0013.5 3h-3zm-2.693.178A3 3 0 0110.5 1.5h3a3 3 0 012.694 1.678c.497.042.992.092 1.486.15 1.497.173 2.57 1.46 2.57 2.929V19.5a3 3 0 01-3 3H6.75a3 3 0 01-3-3V6.257c0-1.47 1.073-2.756 2.57-2.93.493-.057.989-.107 1.487-.15z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const EditIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
-          <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
-          <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const EyeIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
-          <path
-            fillRule="evenodd"
-            d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const EyeSlashIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M3.53 2.47a.75.75 0 00-1.06 1.06l18 18a.75.75 0 101.06-1.06l-18-18zM22.676 12.553a11.249 11.249 0 01-2.631 4.31l-3.099-3.099a5.25 5.25 0 00-6.71-6.71L7.759 4.577a11.217 11.217 0 014.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113z" />
-          <path d="M15.75 12c0 .18-.013.357-.037.53l-4.244-4.243A3.75 3.75 0 0115.75 12zM12.53 15.713l-4.243-4.244a3.75 3.75 0 004.243 4.243z" />
-          <path d="M6.75 12c0-.619.107-1.213.304-1.764l-3.1-3.1a11.25 11.25 0 00-2.63 4.31c-.12.362-.12.752 0 1.114 1.489 4.467 5.704 7.69 10.675 7.69 1.5 0 2.933-.294 4.242-.827l-2.477-2.477A5.25 5.25 0 016.75 12z" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const HeartIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox={`0 0 24 24`}
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox={`0 0 24 24`}
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const HelpIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
-          <path d="M12 17h.01" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <circle cx="12" cy="12" r="10" />
-          <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
-          <path d="M12 17h.01" />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const HomeIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
-          <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const KeyIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4" />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const MailIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-          <path d="M22 6l-10 7L2 6" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-          <path d="M22 6l-10 7L2 6" />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const MapIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-          />
-        </svg>
-      )}
-    </>
-  );
-};
-
-export const MoonIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
-  ...props
-}) => {
-  return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.75 10C3.75 9.80109 3.82902 9.61032 3.96967 9.46967C4.11032 9.32902 4.30109 9.25 4.5 9.25C4.69891 9.25 4.88968 9.32902 5.03033 9.46967C5.17098 9.61032 5.25 9.80109 5.25 10C5.25 10.1989 5.17098 10.3897 5.03033 10.5303C4.88968 10.671 4.69891 10.75 4.5 10.75C4.30109 10.75 4.11032 10.671 3.96967 10.5303C3.82902 10.3897 3.75 10.1989 3.75 10ZM9.25 10C9.25 9.80109 9.32902 9.61032 9.46967 9.46967C9.61032 9.32902 9.80109 9.25 10 9.25C10.1989 9.25 10.3897 9.32902 10.5303 9.46967C10.671 9.61032 10.75 9.80109 10.75 10C10.75 10.1989 10.671 10.3897 10.5303 10.5303C10.3897 10.671 10.1989 10.75 10 10.75C9.80109 10.75 9.61032 10.671 9.46967 10.5303C9.32902 10.3897 9.25 10.1989 9.25 10ZM14.9697 9.46967C15.1103 9.32902 15.3011 9.25 15.5 9.25C15.6989 9.25 15.8897 9.32902 16.0303 9.46967C16.171 9.61032 16.25 9.80109 16.25 10C16.25 10.1989 16.171 10.3897 16.0303 10.5303C15.8897 10.671 15.6989 10.75 15.5 10.75C15.3011 10.75 15.1103 10.671 14.9697 10.5303C14.829 10.3897 14.75 10.1989 14.75 10C14.75 9.80109 14.829 9.61032 14.9697 9.46967Z"
+        stroke={color}
+        stroke-width="1.5"
+      />
+    </svg>
   );
 };
 
 export const MoreIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <circle cx="12" cy="12" r="1" fill="currentColor" />
-          <circle cx="12" cy="5" r="1" fill="currentColor" />
-          <circle cx="12" cy="19" r="1" fill="currentColor" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <circle cx="12" cy="12" r="1" fill="currentColor" />
-          <circle cx="12" cy="5" r="1" fill="currentColor" />
-          <circle cx="12" cy="19" r="1" fill="currentColor" />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10 3.75C10.1989 3.75 10.3897 3.82902 10.5303 3.96967C10.671 4.11032 10.75 4.30109 10.75 4.5C10.75 4.69891 10.671 4.88968 10.5303 5.03033C10.3897 5.17098 10.1989 5.25 10 5.25C9.80109 5.25 9.61032 5.17098 9.46967 5.03033C9.32902 4.88968 9.25 4.69891 9.25 4.5C9.25 4.30109 9.32902 4.11032 9.46967 3.96967C9.61032 3.82902 9.80109 3.75 10 3.75ZM10 9.25C10.1989 9.25 10.3897 9.32902 10.5303 9.46967C10.671 9.61032 10.75 9.80109 10.75 10C10.75 10.1989 10.671 10.3897 10.5303 10.5303C10.3897 10.671 10.1989 10.75 10 10.75C9.80109 10.75 9.61032 10.671 9.46967 10.5303C9.32902 10.3897 9.25 10.1989 9.25 10C9.25 9.80109 9.32902 9.61032 9.46967 9.46967C9.61032 9.32902 9.80109 9.25 10 9.25ZM10.5303 14.9697C10.671 15.1103 10.75 15.3011 10.75 15.5C10.75 15.6989 10.671 15.8897 10.5303 16.0303C10.3897 16.171 10.1989 16.25 10 16.25C9.80109 16.25 9.61032 16.171 9.46967 16.0303C9.32902 15.8897 9.25 15.6989 9.25 15.5C9.25 15.3011 9.32902 15.1103 9.46967 14.9697C9.61032 14.829 9.80109 14.75 10 14.75C10.1989 14.75 10.3897 14.829 10.5303 14.9697Z"
+        stroke={color}
+        stroke-width="1.5"
+      />
+    </svg>
   );
 };
 
-export const PlayIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const KeyIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <polygon points="5 3 19 12 5 21 5 3" fill="var(--geist-fill)" />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.9095 4.76103C13.5268 4.76103 14.1188 5.00625 14.5553 5.44275C14.9918 5.87925 15.237 6.47127 15.237 7.08857M17.5646 7.08857C17.5647 7.76752 17.4162 8.43828 17.1297 9.05381C16.8432 9.66934 16.4255 10.2147 15.9059 10.6518C15.3863 11.0888 14.7773 11.4069 14.1218 11.5837C13.4663 11.7605 12.78 11.7918 12.1111 11.6754C11.6743 11.6001 11.2119 11.6955 10.8985 12.009L8.83628 14.0712H7.09063V15.8168H5.34497V17.5625H2.43555V15.3762C2.43555 14.913 2.61942 14.4684 2.94683 14.1418L7.98906 9.09956C8.3025 8.78612 8.39793 8.32372 8.32267 7.88692C8.21265 7.25163 8.2358 6.60041 8.39066 5.97454C8.54551 5.34866 8.82869 4.76178 9.22224 4.25109C9.6158 3.74039 10.1112 3.31702 10.6769 3.0078C11.2427 2.69858 11.8665 2.51026 12.5088 2.45477C13.1512 2.39928 13.7981 2.47784 14.4085 2.68545C15.0189 2.89307 15.5795 3.22523 16.0548 3.66087C16.5301 4.0965 16.9097 4.62613 17.1696 5.21618C17.4295 5.80622 17.564 6.44382 17.5646 7.08857V7.08857Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const PlusCircleIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const RocketIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.7845 11.8383C12.9461 12.5217 12.9508 13.2328 12.7985 13.9182C12.6461 14.6037 12.3407 15.2459 11.9049 15.7965C11.4691 16.3472 10.9144 16.7921 10.2823 17.098C9.65017 17.4038 8.95703 17.5626 8.25481 17.5625V13.8394M12.7845 11.8383C14.2659 10.7592 15.471 9.34497 16.3014 7.71115C17.1318 6.07732 17.5639 4.27024 17.5625 2.4375C15.7299 2.43618 13.923 2.86836 12.2893 3.69875C10.6556 4.52913 9.24152 5.73417 8.1625 7.21545M12.7853 11.8383C11.4372 12.8243 9.89165 13.507 8.25481 13.8394M8.1625 7.21545C7.47906 7.0538 6.76789 7.04894 6.08229 7.20121C5.39669 7.35349 4.75445 7.65895 4.20369 8.09473C3.65293 8.5305 3.20794 9.08527 2.90207 9.71747C2.5962 10.3497 2.43737 11.0429 2.4375 11.7452H6.16058M8.1625 7.21545C7.17657 8.56337 6.49391 10.1086 6.16135 11.7452M8.25481 13.8394C8.17492 13.8557 8.09425 13.8712 8.01358 13.886C7.30991 13.328 6.6728 12.6909 6.11481 11.9872C6.12947 11.9064 6.14498 11.8257 6.16135 11.7452M4.42392 13.599C3.91368 13.9784 3.51698 14.4902 3.27676 15.0789C3.03655 15.6676 2.96197 16.3108 3.06112 16.9389C3.68925 17.0379 4.33252 16.9632 4.92124 16.7229C5.50996 16.4825 6.0217 16.0857 6.40102 15.5753M13.4904 7.67308C13.4904 7.98165 13.3678 8.27758 13.1496 8.49577C12.9314 8.71396 12.6355 8.83654 12.3269 8.83654C12.0184 8.83654 11.7224 8.71396 11.5042 8.49577C11.286 8.27758 11.1635 7.98165 11.1635 7.67308C11.1635 7.36451 11.286 7.06858 11.5042 6.85039C11.7224 6.6322 12.0184 6.50962 12.3269 6.50962C12.6355 6.50962 12.9314 6.6322 13.1496 6.85039C13.3678 7.06858 13.4904 7.36451 13.4904 7.67308Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const PlusIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const ZzzIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M12 5v14" />
-          <path d="M5 12h14" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M12 5v14" />
-          <path d="M5 12h14" />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M11.8335 7.89417H16.3977L12.2452 12.9008H16.6668"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5.8335 12.8H9.6585L6.23683 16.9242H9.8785H6.23683"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.3335 2.86749H8.856L3.746 9.02749H9.14266"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const RotateIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const SparklesIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M1 4v6h6" />
-          <path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M1 4v6h6" />
-          <path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M7.50004 3.75C7.63584 3.75003 7.76794 3.79429 7.87635 3.87608C7.98475 3.95788 8.06357 4.07275 8.10087 4.20333L8.77837 6.575C8.92425 7.08577 9.19791 7.55092 9.57352 7.92652C9.94912 8.30213 10.4143 8.57579 10.925 8.72167L13.2967 9.39917C13.4272 9.43655 13.542 9.5154 13.6237 9.6238C13.7054 9.7322 13.7496 9.86426 13.7496 10C13.7496 10.1357 13.7054 10.2678 13.6237 10.3762C13.542 10.4846 13.4272 10.5635 13.2967 10.6008L10.925 11.2783C10.4143 11.4242 9.94912 11.6979 9.57352 12.0735C9.19791 12.4491 8.92425 12.9142 8.77837 13.425L8.10087 15.7967C8.06349 15.9272 7.98464 16.0419 7.87624 16.1236C7.76784 16.2054 7.63578 16.2496 7.50004 16.2496C7.36429 16.2496 7.23224 16.2054 7.12384 16.1236C7.01544 16.0419 6.93659 15.9272 6.8992 15.7967L6.2217 13.425C6.07583 12.9142 5.80217 12.4491 5.42656 12.0735C5.05095 11.6979 4.5858 11.4242 4.07504 11.2783L1.70337 10.6008C1.57288 10.5635 1.4581 10.4846 1.37639 10.3762C1.29468 10.2678 1.25049 10.1357 1.25049 10C1.25049 9.86426 1.29468 9.7322 1.37639 9.6238C1.4581 9.5154 1.57288 9.43655 1.70337 9.39917L4.07504 8.72167C4.5858 8.57579 5.05095 8.30213 5.42656 7.92652C5.80217 7.55092 6.07583 7.08577 6.2217 6.575L6.8992 4.20333C6.93651 4.07275 7.01532 3.95788 7.12373 3.87608C7.23214 3.79429 7.36423 3.75003 7.50004 3.75ZM15 1.25C15.1395 1.24992 15.2749 1.29647 15.3848 1.38224C15.4948 1.46801 15.5729 1.58807 15.6067 1.72333L15.8217 2.58667C16.0184 3.37 16.63 3.98167 17.4134 4.17833L18.2767 4.39333C18.4122 4.4269 18.5326 4.50488 18.6186 4.61483C18.7047 4.72479 18.7514 4.86038 18.7514 5C18.7514 5.13962 18.7047 5.27521 18.6186 5.38517C18.5326 5.49512 18.4122 5.5731 18.2767 5.60667L17.4134 5.82167C16.63 6.01833 16.0184 6.63 15.8217 7.41333L15.6067 8.27667C15.5731 8.41219 15.4952 8.53257 15.3852 8.61861C15.2753 8.70465 15.1397 8.7514 15 8.7514C14.8604 8.7514 14.7248 8.70465 14.6149 8.61861C14.5049 8.53257 14.4269 8.41219 14.3934 8.27667L14.1784 7.41333C14.0822 7.02869 13.8833 6.67742 13.603 6.39706C13.3226 6.11671 12.9713 5.91782 12.5867 5.82167L11.7234 5.60667C11.5878 5.5731 11.4675 5.49512 11.3814 5.38517C11.2954 5.27521 11.2486 5.13962 11.2486 5C11.2486 4.86038 11.2954 4.72479 11.3814 4.61483C11.4675 4.50488 11.5878 4.4269 11.7234 4.39333L12.5867 4.17833C12.9713 4.08218 13.3226 3.88329 13.603 3.60294C13.8833 3.32258 14.0822 2.97131 14.1784 2.58667L14.3934 1.72333C14.4272 1.58807 14.5053 1.46801 14.6152 1.38224C14.7252 1.29647 14.8606 1.24992 15 1.25ZM13.75 12.5C13.8813 12.4999 14.0093 12.5412 14.1158 12.6179C14.2223 12.6946 14.3019 12.803 14.3434 12.9275L14.6717 13.9133C14.7967 14.2858 15.0884 14.5792 15.4617 14.7033L16.4475 15.0325C16.5717 15.0742 16.6796 15.1538 16.756 15.2601C16.8325 15.3664 16.8736 15.4941 16.8736 15.625C16.8736 15.7559 16.8325 15.8836 16.756 15.9899C16.6796 16.0962 16.5717 16.1758 16.4475 16.2175L15.4617 16.5467C15.0892 16.6717 14.7959 16.9633 14.6717 17.3367L14.3425 18.3225C14.3009 18.4466 14.2212 18.5546 14.1149 18.631C14.0086 18.7075 13.881 18.7486 13.75 18.7486C13.6191 18.7486 13.4915 18.7075 13.3851 18.631C13.2788 18.5546 13.1992 18.4466 13.1575 18.3225L12.8284 17.3367C12.767 17.1527 12.6637 16.9856 12.5265 16.8485C12.3894 16.7114 12.2223 16.6081 12.0384 16.5467L11.0525 16.2175C10.9284 16.1758 10.8205 16.0962 10.744 15.9899C10.6676 15.8836 10.6265 15.7559 10.6265 15.625C10.6265 15.4941 10.6676 15.3664 10.744 15.2601C10.8205 15.1538 10.9284 15.0742 11.0525 15.0325L12.0384 14.7033C12.4109 14.5783 12.7042 14.2867 12.8284 13.9133L13.1575 12.9275C13.199 12.8031 13.2785 12.6949 13.3848 12.6182C13.4911 12.5414 13.6189 12.5001 13.75 12.5Z"
+        fill={color}
+      />
+    </svg>
   );
 };
 
-export const SearchIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const ArrowMiniRightIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M11 17.25a6.25 6.25 0 110-12.5 6.25 6.25 0 010 12.5z" />
-          <path d="M16 16l4.5 4.5" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M11 17.25a6.25 6.25 0 110-12.5 6.25 6.25 0 010 12.5z" />
-          <path d="M16 16l4.5 4.5" />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5 10H15M15 10L10.5 5.5M15 10L10.5 14.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const SettingsIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const ChevronUpDownIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M6 12.75L9.75 16.5L13.5 12.75M6 6.75L9.75 3L13.5 6.75"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const ShareIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const ClockIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M10 5.83325V10.2083L12.5 11.6666"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const ShoppingCartIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const BoltIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <circle cx="9" cy="21" r="1" />
-          <circle cx="20" cy="21" r="1" />
-          <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <circle cx="9" cy="21" r="1" />
-          <circle cx="20" cy="21" r="1" />
-          <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.125 11.25L11.875 1.875L10 8.75H16.875L8.125 18.125L10 11.25H3.125Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ServerIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M4.375 11.875H15.625M4.375 11.875C3.71196 11.875 3.07607 11.6116 2.60723 11.1428C2.13839 10.6739 1.875 10.038 1.875 9.375M4.375 11.875C3.71196 11.875 3.07607 12.1384 2.60723 12.6072C2.13839 13.0761 1.875 13.712 1.875 14.375C1.875 15.038 2.13839 15.6739 2.60723 16.1428C3.07607 16.6116 3.71196 16.875 4.375 16.875H15.625C16.288 16.875 16.9239 16.6116 17.3928 16.1428C17.8616 15.6739 18.125 15.038 18.125 14.375C18.125 13.712 17.8616 13.0761 17.3928 12.6072C16.9239 12.1384 16.288 11.875 15.625 11.875M1.875 9.375C1.875 8.71196 2.13839 8.07607 2.60723 7.60723C3.07607 7.13839 3.71196 6.875 4.375 6.875H15.625C16.288 6.875 16.9239 7.13839 17.3928 7.60723C17.8616 8.07607 18.125 8.71196 18.125 9.375M1.875 9.375C1.875 8.56361 2.13817 7.77411 2.625 7.125L4.78083 4.25C5.04281 3.9007 5.38251 3.61719 5.77305 3.42192C6.16358 3.22666 6.59421 3.125 7.03083 3.125H12.9692C13.8542 3.125 14.6875 3.54167 15.2192 4.25L17.375 7.125C17.8618 7.77411 18.125 8.56361 18.125 9.375M18.125 9.375C18.125 10.038 17.8616 10.6739 17.3928 11.1428C16.9239 11.6116 16.288 11.875 15.625 11.875M15.625 14.375H15.6317V14.3817H15.625V14.375ZM15.625 9.375H15.6317V9.38167H15.625V9.375ZM13.125 14.375H13.1317V14.3817H13.125V14.375ZM13.125 9.375H13.1317V9.38167H13.125V9.375Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const DesktopIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M2 4.25C2 3.65326 2.23705 3.08097 2.65901 2.65901C3.08097 2.23705 3.65326 2 4.25 2H15.75C16.3467 2 16.919 2.23705 17.341 2.65901C17.7629 3.08097 18 3.65326 18 4.25V12.75C18 13.3467 17.7629 13.919 17.341 14.341C16.919 14.7629 16.3467 15 15.75 15H12.645C12.8403 15.6543 13.2226 16.2372 13.745 16.677C13.8625 16.7762 13.9467 16.9092 13.9861 17.0579C14.0255 17.2065 14.0182 17.3637 13.9653 17.5081C13.9123 17.6526 13.8163 17.7772 13.6901 17.8652C13.564 17.9532 13.4138 18.0002 13.26 18H6.74C6.58628 18 6.43627 17.9528 6.31027 17.8647C6.18427 17.7767 6.08838 17.652 6.03557 17.5077C5.98275 17.3633 5.97557 17.2062 6.015 17.0576C6.05443 16.9091 6.13856 16.7762 6.256 16.677C6.77799 16.2371 7.15999 15.6542 7.355 15H4.25C3.65326 15 3.08097 14.7629 2.65901 14.341C2.23705 13.919 2 13.3467 2 12.75V4.25ZM3.5 4.25C3.5 4.05109 3.57902 3.86032 3.71967 3.71967C3.86032 3.57902 4.05109 3.5 4.25 3.5H15.75C15.9489 3.5 16.1397 3.57902 16.2803 3.71967C16.421 3.86032 16.5 4.05109 16.5 4.25V11.75C16.5 11.9489 16.421 12.1397 16.2803 12.2803C16.1397 12.421 15.9489 12.5 15.75 12.5H4.25C4.05109 12.5 3.86032 12.421 3.71967 12.2803C3.57902 12.1397 3.5 11.9489 3.5 11.75V4.25Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const MoneyIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2 14.9672C6.37793 14.9636 10.7368 15.5434 14.9616 16.6911C15.5582 16.8536 16.1538 16.4105 16.1538 15.7918V14.9672M3.23077 3.2749V3.89029C3.23077 4.0535 3.16593 4.21002 3.05053 4.32543C2.93512 4.44084 2.77859 4.50567 2.61538 4.50567H2M2 4.50567V4.19798C2 3.68844 2.41354 3.2749 2.92308 3.2749H16.7692M2 4.50567V11.8903M16.7692 3.2749V3.89029C16.7692 4.22998 17.0449 4.50567 17.3846 4.50567H18M16.7692 3.2749H17.0769C17.5865 3.2749 18 3.68844 18 4.19798V12.198C18 12.7075 17.5865 13.1211 17.0769 13.1211H16.7692M2 11.8903V12.198C2 12.4428 2.09725 12.6776 2.27036 12.8507C2.44347 13.0238 2.67826 13.1211 2.92308 13.1211H3.23077M2 11.8903H2.61538C2.77859 11.8903 2.93512 11.9551 3.05053 12.0705C3.16593 12.1859 3.23077 12.3425 3.23077 12.5057V13.1211M16.7692 13.1211V12.5057C16.7692 12.3425 16.8341 12.1859 16.9495 12.0705C17.0649 11.9551 17.2214 11.8903 17.3846 11.8903H18M16.7692 13.1211H3.23077M12.4615 8.19798C12.4615 8.85082 12.2022 9.47692 11.7406 9.93855C11.2789 10.4002 10.6528 10.6595 10 10.6595C9.34716 10.6595 8.72106 10.4002 8.25943 9.93855C7.7978 9.47692 7.53846 8.85082 7.53846 8.19798C7.53846 7.54514 7.7978 6.91904 8.25943 6.45741C8.72106 5.99578 9.34716 5.73644 10 5.73644C10.6528 5.73644 11.2789 5.99578 11.7406 6.45741C12.2022 6.91904 12.4615 7.54514 12.4615 8.19798ZM14.9231 8.19798H14.9296V8.20454H14.9231V8.19798ZM5.07692 8.19798H5.08349V8.20454H5.07692V8.19798Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const WorldIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M17.4107 11.1609L16.4649 10.2151C16.3225 10.0725 16.2041 9.90784 16.114 9.72756L15.214 7.92756C15.1896 7.87871 15.1538 7.83638 15.1097 7.80405C15.0657 7.77172 15.0146 7.75032 14.9606 7.74161C14.9067 7.7329 14.8514 7.73714 14.7994 7.75396C14.7474 7.77079 14.7002 7.79973 14.6615 7.8384C14.5746 7.92525 14.466 7.98727 14.347 8.01804C14.2281 8.04881 14.103 8.04721 13.9849 8.0134L12.924 7.7109C12.7543 7.66318 12.5731 7.67749 12.413 7.75126C12.2529 7.82503 12.1243 7.95343 12.0502 8.11344C11.9762 8.27345 11.9616 8.4546 12.009 8.62441C12.0564 8.79422 12.1628 8.94158 12.309 9.04006L12.7982 9.36506C13.2899 9.69423 13.3599 10.3901 12.9415 10.8084L12.7749 10.9751C12.5982 11.1517 12.4999 11.3901 12.4999 11.6384V11.9801C12.4999 12.3209 12.4082 12.6542 12.2332 12.9451L11.1374 14.7709C10.9812 15.0314 10.7601 15.2471 10.4958 15.3968C10.2314 15.5465 9.93283 15.6251 9.62905 15.6251C9.39588 15.6251 9.17226 15.5324 9.00738 15.3676C8.84251 15.2027 8.74988 14.9791 8.74988 14.7459V13.7692C8.74988 13.0026 8.28321 12.3134 7.57155 12.0284L7.02571 11.8109C6.62858 11.6519 6.29774 11.3619 6.08811 10.989C5.87848 10.6162 5.80265 10.1828 5.87321 9.7609L5.87905 9.7259C5.91778 9.49407 5.99976 9.27159 6.12071 9.07006L6.19571 8.94506C6.39473 8.61365 6.69131 8.35186 7.04486 8.19552C7.39841 8.03919 7.79164 7.99595 8.17071 8.07173L9.15238 8.2684C9.38339 8.31447 9.62328 8.2719 9.82432 8.14914C10.0254 8.02638 10.1728 7.83244 10.2374 7.6059L10.4107 6.99756C10.4708 6.7874 10.4555 6.56286 10.3675 6.36277C10.2796 6.16267 10.1245 5.99959 9.92905 5.90173L9.37488 5.62506L9.29905 5.7009C9.12494 5.87501 8.91823 6.01312 8.69075 6.10734C8.46326 6.20157 8.21944 6.25006 7.97321 6.25006H7.82321C7.61571 6.25006 7.41738 6.3334 7.27155 6.4784C7.13789 6.61326 6.95943 6.69443 6.76994 6.70653C6.58045 6.71864 6.39311 6.66084 6.24338 6.54407C6.09366 6.42731 5.99194 6.2597 5.95751 6.07297C5.92308 5.88625 5.95832 5.69338 6.05655 5.5309L7.23238 3.57006C7.34958 3.37515 7.43034 3.16055 7.47071 2.93673M17.4107 11.1609C17.6126 9.87518 17.4764 8.55906 17.0155 7.34192C16.5547 6.12478 15.785 5.04851 14.7822 4.2189C13.7794 3.3893 12.578 2.83493 11.2961 2.61027C10.0142 2.38561 8.69585 2.4984 7.47071 2.93756C6.22431 3.38434 5.11841 4.15312 4.26538 5.16578C3.41235 6.17843 2.84261 7.39886 2.61405 8.70304C2.38549 10.0072 2.50627 11.3487 2.9641 12.591C3.42194 13.8334 4.20051 14.9325 5.2207 15.7765C6.24089 16.6205 7.46633 17.1793 8.77249 17.3963C10.0786 17.6133 11.419 17.4806 12.6572 17.0117C13.8955 16.5429 14.9876 15.7546 15.8225 14.7269C16.6574 13.6993 17.2054 12.4689 17.4107 11.1609Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const StoreIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M11.25 17.5V11.25C11.25 11.0842 11.3159 10.9253 11.4331 10.8081C11.5503 10.6908 11.7093 10.625 11.875 10.625H14.375C14.5408 10.625 14.6997 10.6908 14.817 10.8081C14.9342 10.9253 15 11.0842 15 11.25V17.5M11.25 17.5H1.96668M11.25 17.5H15M15 17.5H18.0333M16.875 17.5V7.79083C17.2072 7.59909 17.4908 7.33349 17.7038 7.01459C17.9169 6.6957 18.0538 6.33205 18.1038 5.95179C18.1538 5.57154 18.1157 5.18487 17.9924 4.82171C17.869 4.45855 17.6638 4.12864 17.3925 3.8575L16.4008 2.86667C16.1667 2.63218 15.8489 2.50029 15.5175 2.5H4.48168C4.15027 2.50029 3.83254 2.63218 3.59835 2.86667L2.60751 3.85667C2.33688 4.12811 2.13219 4.45809 2.00924 4.82114C1.88628 5.1842 1.84834 5.57064 1.89834 5.95068C1.94834 6.33072 2.08495 6.6942 2.29763 7.01309C2.5103 7.33199 2.79337 7.59779 3.12501 7.79M3.12501 17.4992V7.79167C3.62503 8.07999 4.20939 8.18647 4.77897 8.09306C5.34855 7.99965 5.86828 7.71209 6.25001 7.27917C6.48443 7.54537 6.77293 7.75852 7.09626 7.90437C7.41959 8.05023 7.77031 8.12545 8.12501 8.125C8.87168 8.125 9.54168 7.7975 10 7.27833C10.2344 7.54469 10.5228 7.75799 10.8462 7.90399C11.1695 8.05 11.5202 8.12534 11.875 8.125C12.6217 8.125 13.2917 7.7975 13.75 7.27833C14.1319 7.71112 14.6516 7.99852 15.2212 8.09178C15.7908 8.18504 16.3751 8.07842 16.875 7.79M5.62501 14.9992H8.75001C8.91577 14.9992 9.07474 14.9333 9.19195 14.8161C9.30916 14.6989 9.37501 14.5399 9.37501 14.3742V11.25C9.37501 11.0842 9.30916 10.9253 9.19195 10.8081C9.07474 10.6908 8.91577 10.625 8.75001 10.625H5.62501C5.45925 10.625 5.30028 10.6908 5.18307 10.8081C5.06586 10.9253 5.00001 11.0842 5.00001 11.25V14.375C5.00001 14.7208 5.28001 14.9992 5.62501 14.9992Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ListIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M6.875 5.625H16.875M6.875 10H16.875M6.875 14.375H16.875M3.125 5.625H3.13083V5.63167H3.125V5.625ZM3.4375 5.625C3.4375 5.70788 3.40458 5.78737 3.34597 5.84597C3.28737 5.90458 3.20788 5.9375 3.125 5.9375C3.04212 5.9375 2.96263 5.90458 2.90403 5.84597C2.84542 5.78737 2.8125 5.70788 2.8125 5.625C2.8125 5.54212 2.84542 5.46263 2.90403 5.40403C2.96263 5.34542 3.04212 5.3125 3.125 5.3125C3.20788 5.3125 3.28737 5.34542 3.34597 5.40403C3.40458 5.46263 3.4375 5.54212 3.4375 5.625ZM3.125 10H3.13083V10.0067H3.125V10ZM3.4375 10C3.4375 10.0829 3.40458 10.1624 3.34597 10.221C3.28737 10.2796 3.20788 10.3125 3.125 10.3125C3.04212 10.3125 2.96263 10.2796 2.90403 10.221C2.84542 10.1624 2.8125 10.0829 2.8125 10C2.8125 9.91712 2.84542 9.83763 2.90403 9.77903C2.96263 9.72042 3.04212 9.6875 3.125 9.6875C3.20788 9.6875 3.28737 9.72042 3.34597 9.77903C3.40458 9.83763 3.4375 9.91712 3.4375 10ZM3.125 14.375H3.13083V14.3817H3.125V14.375ZM3.4375 14.375C3.4375 14.4579 3.40458 14.5374 3.34597 14.596C3.28737 14.6546 3.20788 14.6875 3.125 14.6875C3.04212 14.6875 2.96263 14.6546 2.90403 14.596C2.84542 14.5374 2.8125 14.4579 2.8125 14.375C2.8125 14.2921 2.84542 14.2126 2.90403 14.154C2.96263 14.0954 3.04212 14.0625 3.125 14.0625C3.20788 14.0625 3.28737 14.0954 3.34597 14.154C3.40458 14.2126 3.4375 14.2921 3.4375 14.375Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CheckIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.75 10.625L8.75 15.625L16.25 4.375"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const MinusIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.375 10H5.625"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const MapIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.5 5.62501V12.5M12.5 7.50001V14.375M12.9192 17.29L16.9817 15.2592C17.2992 15.1008 17.5 14.7758 17.5 14.4208V4.01668C17.5 3.32001 16.7667 2.86668 16.1433 3.17834L12.9192 4.79001C12.655 4.92251 12.3442 4.92251 12.0808 4.79001L7.91917 2.71001C7.78901 2.64495 7.64551 2.61108 7.5 2.61108C7.35449 2.61108 7.21098 2.64495 7.08083 2.71001L3.01833 4.74084C2.7 4.90001 2.5 5.22501 2.5 5.57918V15.9833C2.5 16.68 3.23333 17.1333 3.85667 16.8217L7.08083 15.21C7.345 15.0775 7.65583 15.0775 7.91917 15.21L12.0808 17.2908C12.345 17.4225 12.6558 17.4225 12.9192 17.2908V17.29Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const MoonIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M7.75011 2.17338C7.83316 2.25641 7.88967 2.36225 7.91246 2.47746C7.93525 2.59267 7.92329 2.71205 7.8781 2.82045C7.5169 3.68732 7.33159 4.61734 7.33295 5.55645C7.33295 7.4423 8.0821 9.25091 9.4156 10.5844C10.7491 11.9179 12.5577 12.667 14.4436 12.667C15.3827 12.6684 16.3127 12.4831 17.1796 12.1219C17.2879 12.0768 17.4071 12.0649 17.5223 12.0876C17.6374 12.1104 17.7431 12.1668 17.8262 12.2497C17.9092 12.3326 17.9657 12.4383 17.9886 12.5534C18.0114 12.6685 17.9996 12.7878 17.9546 12.8962C17.3242 14.4078 16.2605 15.699 14.8976 16.6072C13.5347 17.5154 11.9335 18.0001 10.2957 18C5.7141 18 2 14.2859 2 9.7043C2 6.25329 4.10711 3.29528 7.10383 2.04539C7.21213 2.00037 7.33135 1.98851 7.4464 2.01129C7.56144 2.03407 7.66714 2.09049 7.75011 2.17338Z"
+        fill={color}
+      />
+    </svg>
   );
 };
 
 export const SunIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10 1.875C10.1658 1.875 10.3247 1.94085 10.4419 2.05806C10.5592 2.17527 10.625 2.33424 10.625 2.5V4.375C10.625 4.54076 10.5592 4.69973 10.4419 4.81694C10.3247 4.93415 10.1658 5 10 5C9.83424 5 9.67527 4.93415 9.55806 4.81694C9.44085 4.69973 9.375 4.54076 9.375 4.375V2.5C9.375 2.33424 9.44085 2.17527 9.55806 2.05806C9.67527 1.94085 9.83424 1.875 10 1.875ZM6.25 10C6.25 9.00544 6.64509 8.05161 7.34835 7.34835C8.05161 6.64509 9.00544 6.25 10 6.25C10.9946 6.25 11.9484 6.64509 12.6516 7.34835C13.3549 8.05161 13.75 9.00544 13.75 10C13.75 10.9946 13.3549 11.9484 12.6516 12.6516C11.9484 13.3549 10.9946 13.75 10 13.75C9.00544 13.75 8.05161 13.3549 7.34835 12.6516C6.64509 11.9484 6.25 10.9946 6.25 10ZM15.745 5.13833C15.8554 5.01985 15.9155 4.86315 15.9126 4.70123C15.9098 4.53931 15.8442 4.38483 15.7297 4.27032C15.6152 4.1558 15.4607 4.09021 15.2988 4.08735C15.1369 4.0845 14.9801 4.1446 14.8617 4.255L13.5358 5.58C13.4761 5.63763 13.4285 5.70657 13.3957 5.78281C13.3629 5.85904 13.3456 5.94105 13.3448 6.02403C13.3441 6.10702 13.3599 6.18933 13.3912 6.26615C13.4226 6.34298 13.469 6.41278 13.5277 6.47149C13.5863 6.5302 13.6561 6.57664 13.7329 6.6081C13.8097 6.63956 13.892 6.65542 13.975 6.65474C14.0579 6.65405 14.14 6.63685 14.2162 6.60413C14.2925 6.57141 14.3615 6.52383 14.4192 6.46417L15.745 5.13833ZM18.125 10C18.125 10.1658 18.0592 10.3247 17.9419 10.4419C17.8247 10.5592 17.6658 10.625 17.5 10.625H15.625C15.4592 10.625 15.3003 10.5592 15.1831 10.4419C15.0658 10.3247 15 10.1658 15 10C15 9.83424 15.0658 9.67527 15.1831 9.55806C15.3003 9.44085 15.4592 9.375 15.625 9.375H17.5C17.6658 9.375 17.8247 9.44085 17.9419 9.55806C18.0592 9.67527 18.125 9.83424 18.125 10ZM14.8617 15.745C14.9801 15.8554 15.1369 15.9155 15.2988 15.9126C15.4607 15.9098 15.6152 15.8442 15.7297 15.7297C15.8442 15.6152 15.9098 15.4607 15.9126 15.2988C15.9155 15.1369 15.8554 14.9801 15.745 14.8617L14.42 13.5358C14.3624 13.4761 14.2934 13.4285 14.2172 13.3957C14.141 13.3629 14.059 13.3456 13.976 13.3448C13.893 13.3441 13.8107 13.3599 13.7338 13.3912C13.657 13.4226 13.5872 13.469 13.5285 13.5277C13.4698 13.5863 13.4234 13.6561 13.3919 13.7329C13.3604 13.8097 13.3446 13.892 13.3453 13.975C13.3459 14.0579 13.3631 14.14 13.3959 14.2162C13.4286 14.2925 13.4762 14.3615 13.5358 14.4192L14.8617 15.745ZM10 15C10.1658 15 10.3247 15.0658 10.4419 15.1831C10.5592 15.3003 10.625 15.4592 10.625 15.625V17.5C10.625 17.6658 10.5592 17.8247 10.4419 17.9419C10.3247 18.0592 10.1658 18.125 10 18.125C9.83424 18.125 9.67527 18.0592 9.55806 17.9419C9.44085 17.8247 9.375 17.6658 9.375 17.5V15.625C9.375 15.4592 9.44085 15.3003 9.55806 15.1831C9.67527 15.0658 9.83424 15 10 15ZM6.465 14.4192C6.57879 14.3012 6.64172 14.1433 6.64022 13.9795C6.63872 13.8156 6.57291 13.6589 6.45698 13.543C6.34104 13.4272 6.18425 13.3615 6.02038 13.3602C5.8565 13.3589 5.69866 13.4219 5.58083 13.5358L4.255 14.8608C4.14109 14.9787 4.07802 15.1365 4.07937 15.3004C4.08071 15.4643 4.14637 15.621 4.2622 15.737C4.37802 15.8529 4.53475 15.9187 4.69862 15.9202C4.8625 15.9217 5.0204 15.8588 5.13833 15.745L6.46417 14.42L6.465 14.4192ZM5 10C5 10.1658 4.93415 10.3247 4.81694 10.4419C4.69973 10.5592 4.54076 10.625 4.375 10.625H2.5C2.33424 10.625 2.17527 10.5592 2.05806 10.4419C1.94085 10.3247 1.875 10.1658 1.875 10C1.875 9.83424 1.94085 9.67527 2.05806 9.55806C2.17527 9.44085 2.33424 9.375 2.5 9.375H4.375C4.54076 9.375 4.69973 9.44085 4.81694 9.55806C4.93415 9.67527 5 9.83424 5 10ZM5.58083 6.46417C5.69931 6.57457 5.85602 6.63467 6.01794 6.63181C6.17985 6.62896 6.33434 6.56336 6.44885 6.44885C6.56336 6.33434 6.62896 6.17985 6.63181 6.01794C6.63467 5.85602 6.57457 5.69931 6.46417 5.58083L5.13917 4.255C5.02134 4.14109 4.8635 4.07802 4.69962 4.07937C4.53575 4.08071 4.37896 4.14637 4.26302 4.2622C4.14709 4.37802 4.08128 4.53475 4.07978 4.69862C4.07828 4.8625 4.14121 5.0204 4.255 5.13833L5.58083 6.46417Z"
+        fill={color}
+      />
+    </svg>
   );
 };
 
-export const TrashIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const TerminaIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M1.875 5C1.875 4.33696 2.13839 3.70107 2.60723 3.23223C3.07607 2.76339 3.71196 2.5 4.375 2.5H15.625C16.288 2.5 16.9239 2.76339 17.3928 3.23223C17.8616 3.70107 18.125 4.33696 18.125 5V15C18.125 15.663 17.8616 16.2989 17.3928 16.7678C16.9239 17.2366 16.288 17.5 15.625 17.5H4.375C3.71196 17.5 3.07607 17.2366 2.60723 16.7678C2.13839 16.2989 1.875 15.663 1.875 15V5ZM5.18333 5.80833C5.30052 5.69129 5.45937 5.62555 5.625 5.62555C5.79063 5.62555 5.94948 5.69129 6.06667 5.80833L7.94167 7.68333C8.05871 7.80052 8.12445 7.95937 8.12445 8.125C8.12445 8.29063 8.05871 8.44948 7.94167 8.56667L6.06667 10.4417C5.94819 10.5521 5.79148 10.6122 5.62956 10.6093C5.46765 10.6065 5.31316 10.5409 5.19865 10.4264C5.08414 10.3118 5.01854 10.1574 5.01569 9.99543C5.01283 9.83352 5.07293 9.67681 5.18333 9.55833L6.61667 8.125L5.18333 6.69167C5.06629 6.57448 5.00055 6.41563 5.00055 6.25C5.00055 6.08437 5.06629 5.92552 5.18333 5.80833ZM8.75 9.375C8.58424 9.375 8.42527 9.44085 8.30806 9.55806C8.19085 9.67527 8.125 9.83424 8.125 10C8.125 10.1658 8.19085 10.3247 8.30806 10.4419C8.42527 10.5592 8.58424 10.625 8.75 10.625H11.25C11.4158 10.625 11.5747 10.5592 11.6919 10.4419C11.8092 10.3247 11.875 10.1658 11.875 10C11.875 9.83424 11.8092 9.67527 11.6919 9.55806C11.5747 9.44085 11.4158 9.375 11.25 9.375H8.75Z"
+        fill={color}
+      />
+    </svg>
   );
 };
 
-export const TypeIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const DocumentIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M4 7V4h16v3" />
-          <path d="M9 20h6" />
-          <path d="M12 4v16" />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path d="M4 7V4h16v3" />
-          <path d="M9 20h6" />
-          <path d="M12 4v16" />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.125 14.375V17.1875C13.125 17.705 12.705 18.125 12.1875 18.125H4.0625C3.81386 18.125 3.5754 18.0262 3.39959 17.8504C3.22377 17.6746 3.125 17.4361 3.125 17.1875V6.5625C3.125 6.045 3.545 5.625 4.0625 5.625H5.625C6.04381 5.62472 6.46192 5.65928 6.875 5.72834M13.125 14.375H15.9375C16.455 14.375 16.875 13.955 16.875 13.4375V9.375C16.875 5.65834 14.1725 2.57417 10.625 1.97834C10.2119 1.90928 9.79381 1.87472 9.375 1.875H7.8125C7.295 1.875 6.875 2.295 6.875 2.8125V5.72834M13.125 14.375H7.8125C7.56386 14.375 7.3254 14.2762 7.14959 14.1004C6.97377 13.9246 6.875 13.6861 6.875 13.4375V5.72834M16.875 11.25V9.6875C16.875 8.94158 16.5787 8.22621 16.0512 7.69876C15.5238 7.17132 14.8084 6.875 14.0625 6.875H12.8125C12.5639 6.875 12.3254 6.77623 12.1496 6.60041C11.9738 6.4246 11.875 6.18614 11.875 5.9375V4.6875C11.875 4.31816 11.8023 3.95243 11.6609 3.6112C11.5196 3.26998 11.3124 2.95993 11.0512 2.69876C10.7901 2.4376 10.48 2.23043 10.1388 2.08909C9.79757 1.94775 9.43184 1.875 9.0625 1.875H8.125"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CheveronLeftIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.125 16.25L6.875 10L13.125 3.75"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowLongDownIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.125 14.375L10 17.5M10 17.5L6.875 14.375M10 17.5V2.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowLongLeftIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5.625 13.125L2.5 10M2.5 10L5.625 6.875M2.5 10H17.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowLongRightIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.375 6.875L17.5 10M17.5 10L14.375 13.125M17.5 10H2.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowLongUpIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M6.875 5.625L10 2.5M10 2.5L13.125 5.625M10 2.5V17.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CalendarIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10.625 10.625C10.625 10.7908 10.5592 10.9497 10.4419 11.0669C10.3247 11.1842 10.1658 11.25 10 11.25C9.83424 11.25 9.67527 11.1842 9.55806 11.0669C9.44085 10.9497 9.375 10.7908 9.375 10.625C9.375 10.4592 9.44085 10.3003 9.55806 10.1831C9.67527 10.0658 9.83424 10 10 10C10.1658 10 10.3247 10.0658 10.4419 10.1831C10.5592 10.3003 10.625 10.4592 10.625 10.625ZM6.25 13.125C6.41576 13.125 6.57473 13.0592 6.69194 12.9419C6.80915 12.8247 6.875 12.6658 6.875 12.5C6.875 12.3342 6.80915 12.1753 6.69194 12.0581C6.57473 11.9408 6.41576 11.875 6.25 11.875C6.08424 11.875 5.92527 11.9408 5.80806 12.0581C5.69085 12.1753 5.625 12.3342 5.625 12.5C5.625 12.6658 5.69085 12.8247 5.80806 12.9419C5.92527 13.0592 6.08424 13.125 6.25 13.125ZM6.875 14.375C6.875 14.5408 6.80915 14.6997 6.69194 14.8169C6.57473 14.9342 6.41576 15 6.25 15C6.08424 15 5.92527 14.9342 5.80806 14.8169C5.69085 14.6997 5.625 14.5408 5.625 14.375C5.625 14.2092 5.69085 14.0503 5.80806 13.9331C5.92527 13.8158 6.08424 13.75 6.25 13.75C6.41576 13.75 6.57473 13.8158 6.69194 13.9331C6.80915 14.0503 6.875 14.2092 6.875 14.375ZM8.125 13.125C8.29076 13.125 8.44973 13.0592 8.56694 12.9419C8.68415 12.8247 8.75 12.6658 8.75 12.5C8.75 12.3342 8.68415 12.1753 8.56694 12.0581C8.44973 11.9408 8.29076 11.875 8.125 11.875C7.95924 11.875 7.80027 11.9408 7.68306 12.0581C7.56585 12.1753 7.5 12.3342 7.5 12.5C7.5 12.6658 7.56585 12.8247 7.68306 12.9419C7.80027 13.0592 7.95924 13.125 8.125 13.125ZM8.75 14.375C8.75 14.5408 8.68415 14.6997 8.56694 14.8169C8.44973 14.9342 8.29076 15 8.125 15C7.95924 15 7.80027 14.9342 7.68306 14.8169C7.56585 14.6997 7.5 14.5408 7.5 14.375C7.5 14.2092 7.56585 14.0503 7.68306 13.9331C7.80027 13.8158 7.95924 13.75 8.125 13.75C8.29076 13.75 8.44973 13.8158 8.56694 13.9331C8.68415 14.0503 8.75 14.2092 8.75 14.375ZM10 13.125C10.1658 13.125 10.3247 13.0592 10.4419 12.9419C10.5592 12.8247 10.625 12.6658 10.625 12.5C10.625 12.3342 10.5592 12.1753 10.4419 12.0581C10.3247 11.9408 10.1658 11.875 10 11.875C9.83424 11.875 9.67527 11.9408 9.55806 12.0581C9.44085 12.1753 9.375 12.3342 9.375 12.5C9.375 12.6658 9.44085 12.8247 9.55806 12.9419C9.67527 13.0592 9.83424 13.125 10 13.125ZM10.625 14.375C10.625 14.5408 10.5592 14.6997 10.4419 14.8169C10.3247 14.9342 10.1658 15 10 15C9.83424 15 9.67527 14.9342 9.55806 14.8169C9.44085 14.6997 9.375 14.5408 9.375 14.375C9.375 14.2092 9.44085 14.0503 9.55806 13.9331C9.67527 13.8158 9.83424 13.75 10 13.75C10.1658 13.75 10.3247 13.8158 10.4419 13.9331C10.5592 14.0503 10.625 14.2092 10.625 14.375ZM11.875 13.125C12.0408 13.125 12.1997 13.0592 12.3169 12.9419C12.4342 12.8247 12.5 12.6658 12.5 12.5C12.5 12.3342 12.4342 12.1753 12.3169 12.0581C12.1997 11.9408 12.0408 11.875 11.875 11.875C11.7092 11.875 11.5503 11.9408 11.4331 12.0581C11.3158 12.1753 11.25 12.3342 11.25 12.5C11.25 12.6658 11.3158 12.8247 11.4331 12.9419C11.5503 13.0592 11.7092 13.125 11.875 13.125ZM12.5 14.375C12.5 14.5408 12.4342 14.6997 12.3169 14.8169C12.1997 14.9342 12.0408 15 11.875 15C11.7092 15 11.5503 14.9342 11.4331 14.8169C11.3158 14.6997 11.25 14.5408 11.25 14.375C11.25 14.2092 11.3158 14.0503 11.4331 13.9331C11.5503 13.8158 11.7092 13.75 11.875 13.75C12.0408 13.75 12.1997 13.8158 12.3169 13.9331C12.4342 14.0503 12.5 14.2092 12.5 14.375ZM13.75 13.125C13.9158 13.125 14.0747 13.0592 14.1919 12.9419C14.3092 12.8247 14.375 12.6658 14.375 12.5C14.375 12.3342 14.3092 12.1753 14.1919 12.0581C14.0747 11.9408 13.9158 11.875 13.75 11.875C13.5842 11.875 13.4253 11.9408 13.3081 12.0581C13.1908 12.1753 13.125 12.3342 13.125 12.5C13.125 12.6658 13.1908 12.8247 13.3081 12.9419C13.4253 13.0592 13.5842 13.125 13.75 13.125ZM12.5 10.625C12.5 10.7908 12.4342 10.9497 12.3169 11.0669C12.1997 11.1842 12.0408 11.25 11.875 11.25C11.7092 11.25 11.5503 11.1842 11.4331 11.0669C11.3158 10.9497 11.25 10.7908 11.25 10.625C11.25 10.4592 11.3158 10.3003 11.4331 10.1831C11.5503 10.0658 11.7092 10 11.875 10C12.0408 10 12.1997 10.0658 12.3169 10.1831C12.4342 10.3003 12.5 10.4592 12.5 10.625ZM13.75 11.25C13.9158 11.25 14.0747 11.1842 14.1919 11.0669C14.3092 10.9497 14.375 10.7908 14.375 10.625C14.375 10.4592 14.3092 10.3003 14.1919 10.1831C14.0747 10.0658 13.9158 10 13.75 10C13.5842 10 13.4253 10.0658 13.3081 10.1831C13.1908 10.3003 13.125 10.4592 13.125 10.625C13.125 10.7908 13.1908 10.9497 13.3081 11.0669C13.4253 11.1842 13.5842 11.25 13.75 11.25Z"
+        fill={color}
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M5.625 1.875C5.79076 1.875 5.94973 1.94085 6.06694 2.05806C6.18415 2.17527 6.25 2.33424 6.25 2.5V3.75H13.75V2.5C13.75 2.33424 13.8158 2.17527 13.9331 2.05806C14.0503 1.94085 14.2092 1.875 14.375 1.875C14.5408 1.875 14.6997 1.94085 14.8169 2.05806C14.9342 2.17527 15 2.33424 15 2.5V3.75H15.625C16.288 3.75 16.9239 4.01339 17.3928 4.48223C17.8616 4.95107 18.125 5.58696 18.125 6.25V15.625C18.125 16.288 17.8616 16.9239 17.3928 17.3928C16.9239 17.8616 16.288 18.125 15.625 18.125H4.375C3.71196 18.125 3.07607 17.8616 2.60723 17.3928C2.13839 16.9239 1.875 16.288 1.875 15.625V6.25C1.875 5.58696 2.13839 4.95107 2.60723 4.48223C3.07607 4.01339 3.71196 3.75 4.375 3.75H5V2.5C5 2.33424 5.06585 2.17527 5.18306 2.05806C5.30027 1.94085 5.45924 1.875 5.625 1.875ZM16.875 9.375C16.875 9.04348 16.7433 8.72554 16.5089 8.49112C16.2745 8.2567 15.9565 8.125 15.625 8.125H4.375C4.04348 8.125 3.72554 8.2567 3.49112 8.49112C3.2567 8.72554 3.125 9.04348 3.125 9.375V15.625C3.125 15.9565 3.2567 16.2745 3.49112 16.5089C3.72554 16.7433 4.04348 16.875 4.375 16.875H15.625C15.9565 16.875 16.2745 16.7433 16.5089 16.5089C16.7433 16.2745 16.875 15.9565 16.875 15.625V9.375Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const ToolIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M9.23161 1.875C8.46744 1.875 7.81578 2.4275 7.68995 3.18083L7.54161 4.07417C7.52495 4.17417 7.44578 4.29083 7.29411 4.36417C7.00857 4.50143 6.73389 4.66022 6.47245 4.83917C6.33411 4.935 6.19411 4.94417 6.09745 4.90833L5.24995 4.59C4.90348 4.4602 4.52219 4.45755 4.17396 4.58253C3.82572 4.70751 3.53314 4.95201 3.34828 5.2725L2.57995 6.60333C2.39502 6.92363 2.32971 7.29915 2.39563 7.66307C2.46155 8.027 2.65442 8.35575 2.93995 8.59083L3.63995 9.1675C3.71911 9.2325 3.78161 9.35833 3.76828 9.52583C3.74453 9.84178 3.74453 10.1591 3.76828 10.475C3.78078 10.6417 3.71911 10.7683 3.64078 10.8333L2.93995 11.41C2.65442 11.6451 2.46155 11.9738 2.39563 12.3378C2.32971 12.7017 2.39502 13.0772 2.57995 13.3975L3.34828 14.7283C3.53327 15.0487 3.82591 15.293 4.17413 15.4178C4.52236 15.5426 4.90357 15.5399 5.24995 15.41L6.09911 15.0917C6.19495 15.0558 6.33495 15.0658 6.47411 15.16C6.73411 15.3383 7.00828 15.4975 7.29495 15.635C7.44661 15.7083 7.52578 15.825 7.54245 15.9267L7.69078 16.8192C7.81661 17.5725 8.46828 18.125 9.23245 18.125H10.7691C11.5324 18.125 12.1849 17.5725 12.3108 16.8192L12.4591 15.9258C12.4758 15.8258 12.5541 15.7092 12.7066 15.635C12.9933 15.4975 13.2674 15.3383 13.5274 15.16C13.6666 15.065 13.8066 15.0558 13.9024 15.0917L14.7524 15.41C15.0987 15.5394 15.4796 15.5418 15.8275 15.4168C16.1753 15.2919 16.4676 15.0476 16.6524 14.7275L17.4216 13.3967C17.6065 13.0764 17.6718 12.7009 17.6059 12.3369C17.54 11.973 17.3471 11.6443 17.0616 11.4092L16.3616 10.8325C16.2824 10.7675 16.2199 10.6417 16.2333 10.4742C16.257 10.1582 16.257 9.84095 16.2333 9.525C16.2199 9.35833 16.2824 9.23167 16.3608 9.16667L17.0608 8.59C17.6508 8.105 17.8033 7.265 17.4216 6.6025L16.6533 5.27167C16.4683 4.95132 16.1756 4.707 15.8274 4.58218C15.4792 4.45735 15.098 4.46013 14.7516 4.59L13.9016 4.90833C13.8066 4.94417 13.6666 4.93417 13.5274 4.83917C13.2663 4.66025 12.9919 4.50145 12.7066 4.36417C12.5541 4.29167 12.4758 4.175 12.4591 4.07417L12.3099 3.18083C12.2492 2.81589 12.0609 2.48435 11.7786 2.24522C11.4963 2.0061 11.1382 1.87491 10.7683 1.875H9.23245H9.23161ZM9.99995 13.125C10.8287 13.125 11.6236 12.7958 12.2097 12.2097C12.7957 11.6237 13.1249 10.8288 13.1249 10C13.1249 9.1712 12.7957 8.37634 12.2097 7.79029C11.6236 7.20424 10.8287 6.875 9.99995 6.875C9.17114 6.875 8.37629 7.20424 7.79024 7.79029C7.20419 8.37634 6.87495 9.1712 6.87495 10C6.87495 10.8288 7.20419 11.6237 7.79024 12.2097C8.37629 12.7958 9.17114 13.125 9.99995 13.125Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const ArrowUpMiniIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5 9L10 4M10 4L15 9M10 4V16"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ShoppingIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.1249 8.75V5C13.1249 4.1712 12.7956 3.37634 12.2096 2.79029C11.6235 2.20424 10.8287 1.875 9.99987 1.875C9.17106 1.875 8.37621 2.20424 7.79016 2.79029C7.20411 3.37634 6.87487 4.1712 6.87487 5V8.75M16.3382 7.08917L17.3907 17.0892C17.449 17.6433 17.0157 18.125 16.4582 18.125H3.54153C3.41004 18.1251 3.27999 18.0976 3.15982 18.0442C3.03966 17.9908 2.93207 17.9127 2.84405 17.8151C2.75603 17.7174 2.68954 17.6023 2.64891 17.4772C2.60828 17.3521 2.59441 17.2199 2.6082 17.0892L3.66153 7.08917C3.68583 6.8588 3.79455 6.64558 3.96674 6.49063C4.13893 6.33568 4.36239 6.24996 4.59403 6.25H15.4057C15.8857 6.25 16.2882 6.6125 16.3382 7.08917ZM7.18737 8.75C7.18737 8.83288 7.15444 8.91237 7.09584 8.97097C7.03723 9.02958 6.95775 9.0625 6.87487 9.0625C6.79198 9.0625 6.7125 9.02958 6.65389 8.97097C6.59529 8.91237 6.56237 8.83288 6.56237 8.75C6.56237 8.66712 6.59529 8.58763 6.65389 8.52903C6.7125 8.47042 6.79198 8.4375 6.87487 8.4375C6.95775 8.4375 7.03723 8.47042 7.09584 8.52903C7.15444 8.58763 7.18737 8.66712 7.18737 8.75ZM13.4374 8.75C13.4374 8.83288 13.4044 8.91237 13.3458 8.97097C13.2872 9.02958 13.2077 9.0625 13.1249 9.0625C13.042 9.0625 12.9625 9.02958 12.9039 8.97097C12.8453 8.91237 12.8124 8.83288 12.8124 8.75C12.8124 8.66712 12.8453 8.58763 12.9039 8.52903C12.9625 8.47042 13.042 8.4375 13.1249 8.4375C13.2077 8.4375 13.2872 8.47042 13.3458 8.52903C13.4044 8.58763 13.4374 8.66712 13.4374 8.75Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EyeIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.35726 10.2147C3.31125 10.0764 3.31125 9.92694 3.35726 9.78867C4.28193 7.00667 6.90659 5 9.99993 5C13.0919 5 15.7153 7.00467 16.6419 9.78533C16.6886 9.92333 16.6886 10.0727 16.6419 10.2113C15.7179 12.9933 13.0933 15 9.99993 15C6.90793 15 4.28393 12.9953 3.35726 10.2147Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12 10C12 10.5304 11.7893 11.0391 11.4142 11.4142C11.0391 11.7893 10.5304 12 10 12C9.46957 12 8.96086 11.7893 8.58579 11.4142C8.21071 11.0391 8 10.5304 8 10C8 9.46957 8.21071 8.96086 8.58579 8.58579C8.96086 8.21071 9.46957 8 10 8C10.5304 8 11.0391 8.21071 11.4142 8.58579C11.7893 8.96086 12 9.46957 12 10Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EyeSlashIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M4.65355 7.482C4.02985 8.21812 3.56543 9.07547 3.28955 10C4.15088 12.892 6.82955 15 10.0002 15C10.6622 15 11.3022 14.908 11.9089 14.7367M6.15222 6.152C7.29396 5.39854 8.63227 4.99788 10.0002 5C13.1709 5 15.8489 7.108 16.7102 9.99867C16.2381 11.5782 15.2249 12.941 13.8482 13.848M6.15222 6.152L4.00022 4M6.15222 6.152L8.58555 8.58533M13.8482 13.848L16.0002 16M13.8482 13.848L11.4149 11.4147C11.6006 11.2289 11.7479 11.0084 11.8485 10.7658C11.949 10.5231 12.0007 10.263 12.0007 10.0003C12.0007 9.73767 11.949 9.47757 11.8485 9.2349C11.7479 8.99223 11.6006 8.77173 11.4149 8.586C11.2292 8.40027 11.0087 8.25294 10.766 8.15242C10.5233 8.0519 10.2632 8.00016 10.0006 8.00016C9.73788 8.00016 9.47779 8.0519 9.23512 8.15242C8.99245 8.25294 8.77195 8.40027 8.58622 8.586M11.4142 11.414L8.58688 8.58667"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const RedIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10.625 16.25V15.625C10.625 13.9674 9.96652 12.3777 8.79442 11.2056C7.62232 10.0335 6.0326 9.375 4.375 9.375H3.75M3.75 3.75H4.375C10.9333 3.75 16.25 9.06667 16.25 15.625V16.25M5 15.625C5 15.7908 4.93415 15.9497 4.81694 16.0669C4.69973 16.1842 4.54076 16.25 4.375 16.25C4.20924 16.25 4.05027 16.1842 3.93306 16.0669C3.81585 15.9497 3.75 15.7908 3.75 15.625C3.75 15.4592 3.81585 15.3003 3.93306 15.1831C4.05027 15.0658 4.20924 15 4.375 15C4.54076 15 4.69973 15.0658 4.81694 15.1831C4.93415 15.3003 5 15.4592 5 15.625Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ChartBarIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2.5 10.9375C2.5 10.42 2.92 10 3.4375 10H5.3125C5.83 10 6.25 10.42 6.25 10.9375V16.5625C6.25 17.08 5.83 17.5 5.3125 17.5H3.4375C3.18886 17.5 2.9504 17.4012 2.77459 17.2254C2.59877 17.0496 2.5 16.8111 2.5 16.5625V10.9375ZM8.125 7.1875C8.125 6.67 8.545 6.25 9.0625 6.25H10.9375C11.455 6.25 11.875 6.67 11.875 7.1875V16.5625C11.875 17.08 11.455 17.5 10.9375 17.5H9.0625C8.81386 17.5 8.5754 17.4012 8.39959 17.2254C8.22377 17.0496 8.125 16.8111 8.125 16.5625V7.1875ZM13.75 3.4375C13.75 2.92 14.17 2.5 14.6875 2.5H16.5625C17.08 2.5 17.5 2.92 17.5 3.4375V16.5625C17.5 17.08 17.08 17.5 16.5625 17.5H14.6875C14.4389 17.5 14.2004 17.4012 14.0246 17.2254C13.8488 17.0496 13.75 16.8111 13.75 16.5625V3.4375Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const HashtagIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.3335 7.5H16.6668"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.3335 12.5H16.6668"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.33317 2.5L6.6665 17.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.3332 2.5L11.6665 17.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const AtIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.75 10C13.75 11.3808 14.5892 12.5 15.625 12.5C16.6608 12.5 17.5 11.3808 17.5 10C17.5 8.26484 16.8983 6.58337 15.7975 5.24207C14.6968 3.90078 13.1649 2.98267 11.4631 2.64417C9.76129 2.30567 7.99475 2.56773 6.46448 3.38569C4.9342 4.20365 3.73489 5.52691 3.07088 7.13C2.40688 8.73309 2.31926 10.5168 2.82296 12.1773C3.32667 13.8377 4.39053 15.2721 5.83327 16.2361C7.27601 17.2001 9.00837 17.634 10.7352 17.464C12.462 17.2939 14.0764 16.5303 15.3033 15.3033M13.75 10V6.87501M13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75C9.00544 13.75 8.05161 13.3549 7.34835 12.6517C6.64509 11.9484 6.25 10.9946 6.25 10C6.25 9.00545 6.64509 8.05162 7.34835 7.34836C8.05161 6.6451 9.00544 6.25001 10 6.25001C10.9946 6.25001 11.9484 6.6451 12.6517 7.34836C13.3549 8.05162 13.75 9.00545 13.75 10V10Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+      />
+    </svg>
+  );
+};
+
+export const PaperClipIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M17.0837 9.532L10.386 16.2203C9.56547 17.0397 8.45261 17.5 7.29223 17.5C6.13184 17.5 5.01898 17.0397 4.19847 16.2203C3.37795 15.4009 2.91699 14.2896 2.91699 13.1309C2.91699 11.9721 3.37795 10.8608 4.19847 10.0414L10.8961 3.35312C11.4432 2.80688 12.1851 2.5 12.9586 2.5C13.7322 2.5 14.4741 2.80688 15.0212 3.35312C15.5682 3.89937 15.8755 4.64024 15.8755 5.41275C15.8755 6.18526 15.5682 6.92613 15.0212 7.47237L8.31619 14.1607C8.04269 14.4338 7.67173 14.5873 7.28494 14.5873C6.89814 14.5873 6.52719 14.4338 6.25369 14.1607C5.98018 13.8876 5.82653 13.5171 5.82653 13.1309C5.82653 12.7446 5.98018 12.3742 6.25369 12.1011L12.4412 5.92947"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowBoxUpRightIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M9.05356 5.32683H4.74268C4.2779 5.32683 3.83216 5.51146 3.50351 5.84011C3.17487 6.16875 2.99023 6.6145 2.99023 7.07927V15.2574C2.99023 15.7221 3.17487 16.1679 3.50351 16.4965C3.83216 16.8252 4.2779 17.0098 4.74268 17.0098H12.9208C13.3855 17.0098 13.8313 16.8252 14.1599 16.4965C14.4886 16.1679 14.6732 15.7221 14.6732 15.2574V11.0207M7.00323 13.0137L17.0098 2.99023M17.0098 2.99023H12.9208M17.0098 2.99023V7.07927"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const FaceIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.6517 12.6517C12.3034 12.9999 11.89 13.2761 11.4351 13.4646C10.9801 13.653 10.4925 13.75 10 13.75C9.50754 13.75 9.0199 13.653 8.56493 13.4646C8.10995 13.2761 7.69655 12.9999 7.34833 12.6517M17.5 10C17.5 10.9849 17.306 11.9602 16.9291 12.8701C16.5522 13.7801 15.9997 14.6069 15.3033 15.3033C14.6069 15.9997 13.7801 16.5522 12.8701 16.9291C11.9602 17.306 10.9849 17.5 10 17.5C9.01509 17.5 8.03982 17.306 7.12987 16.9291C6.21993 16.5522 5.39314 15.9997 4.6967 15.3033C4.00026 14.6069 3.44781 13.7801 3.0709 12.8701C2.69399 11.9602 2.5 10.9849 2.5 10C2.5 8.01088 3.29018 6.10322 4.6967 4.6967C6.10322 3.29018 8.01088 2.5 10 2.5C11.9891 2.5 13.8968 3.29018 15.3033 4.6967C16.7098 6.10322 17.5 8.01088 17.5 10ZM8.125 8.125C8.125 8.47 7.985 8.75 7.8125 8.75C7.64 8.75 7.5 8.47 7.5 8.125C7.5 7.78 7.64 7.5 7.8125 7.5C7.985 7.5 8.125 7.78 8.125 8.125ZM7.8125 8.125H7.81917V8.1375H7.8125V8.125ZM12.5 8.125C12.5 8.47 12.36 8.75 12.1875 8.75C12.015 8.75 11.875 8.47 11.875 8.125C11.875 7.78 12.015 7.5 12.1875 7.5C12.36 7.5 12.5 7.78 12.5 8.125ZM12.1875 8.125H12.1942V8.1375H12.1875V8.125Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ChatIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.1875 8.125H6.875M10.3125 8.125H10M13.4375 8.125H13.125M7.1875 8.125C7.1875 8.20788 7.15458 8.28737 7.09597 8.34597C7.03737 8.40458 6.95788 8.4375 6.875 8.4375C6.79212 8.4375 6.71263 8.40458 6.65403 8.34597C6.59542 8.28737 6.5625 8.20788 6.5625 8.125C6.5625 8.04212 6.59542 7.96264 6.65403 7.90403C6.71263 7.84543 6.79212 7.8125 6.875 7.8125C6.95788 7.8125 7.03737 7.84543 7.09597 7.90403C7.15458 7.96264 7.1875 8.04212 7.1875 8.125V8.125ZM10.3125 8.125C10.3125 8.20788 10.2796 8.28737 10.221 8.34597C10.1624 8.40458 10.0829 8.4375 10 8.4375C9.91712 8.4375 9.83763 8.40458 9.77903 8.34597C9.72042 8.28737 9.6875 8.20788 9.6875 8.125C9.6875 8.04212 9.72042 7.96264 9.77903 7.90403C9.83763 7.84543 9.91712 7.8125 10 7.8125C10.0829 7.8125 10.1624 7.84543 10.221 7.90403C10.2796 7.96264 10.3125 8.04212 10.3125 8.125V8.125ZM13.4375 8.125C13.4375 8.20788 13.4046 8.28737 13.346 8.34597C13.2874 8.40458 13.2079 8.4375 13.125 8.4375C13.0421 8.4375 12.9626 8.40458 12.904 8.34597C12.8454 8.28737 12.8125 8.20788 12.8125 8.125C12.8125 8.04212 12.8454 7.96264 12.904 7.90403C12.9626 7.84543 13.0421 7.8125 13.125 7.8125C13.2079 7.8125 13.2874 7.84543 13.346 7.90403C13.4046 7.96264 13.4375 8.04212 13.4375 8.125V8.125ZM1.875 10.6333C1.875 11.9667 2.81083 13.1283 4.13083 13.3225C5.03667 13.4558 5.95167 13.5583 6.875 13.63V17.5L10.3617 14.0142C10.5343 13.8422 10.7664 13.7432 11.01 13.7375C12.6363 13.6975 14.2588 13.5589 15.8683 13.3225C17.1892 13.1283 18.125 11.9675 18.125 10.6325V5.6175C18.125 4.2825 17.1892 3.12167 15.8692 2.9275C13.9258 2.64226 11.9642 2.49938 10 2.5C8.00667 2.5 6.04667 2.64584 4.13083 2.9275C2.81083 3.12167 1.875 4.28334 1.875 5.6175V10.6325V10.6333Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const DataMobileIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2.5 6.25L6.25 2.5M6.25 2.5L10 6.25M6.25 2.5V13.75M17.5 13.75L13.75 17.5M13.75 17.5L10 13.75M13.75 17.5V6.25"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const SearchIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M16.0005 16.0005L12.5359 12.5359M12.5359 12.5359C13.4736 11.5981 14.0004 10.3263 14.0004 9.00019C14.0004 7.67406 13.4736 6.40224 12.5359 5.46452C11.5981 4.5268 10.3263 4 9.00019 4C7.67406 4 6.40224 4.5268 5.46452 5.46452C4.5268 6.40224 4 7.67406 4 9.00019C4 10.3263 4.5268 11.5981 5.46452 12.5359C6.40224 13.4736 7.67406 14.0004 9.00019 14.0004C10.3263 14.0004 11.5981 13.4736 12.5359 12.5359V12.5359Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
 export const UserIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.9088 5.34615C12.9088 6.11758 12.6023 6.8574 12.0569 7.40288C11.5114 7.94836 10.7715 8.25481 10.0001 8.25481C9.2287 8.25481 8.48888 7.94836 7.9434 7.40288C7.39792 6.8574 7.09147 6.11758 7.09147 5.34615C7.09147 4.57473 7.39792 3.8349 7.9434 3.28943C8.48888 2.74395 9.2287 2.4375 10.0001 2.4375C10.7715 2.4375 11.5114 2.74395 12.0569 3.28943C12.6023 3.8349 12.9088 4.57473 12.9088 5.34615V5.34615ZM4.18359 16.2967C4.20852 14.7705 4.83229 13.3152 5.92039 12.2447C7.00849 11.1743 8.47373 10.5743 10.0001 10.5743C11.5265 10.5743 12.9918 11.1743 14.0799 12.2447C15.168 13.3152 15.7917 14.7705 15.8167 16.2967C13.9919 17.1334 12.0076 17.5652 10.0001 17.5625C7.92451 17.5625 5.95438 17.1095 4.18359 16.2967Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const VerifiedIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const HeartIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          {...props}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M17.5 6.875C17.5 4.80417 15.7508 3.125 13.5933 3.125C11.9808 3.125 10.5958 4.06333 10 5.4025C9.40417 4.06333 8.01917 3.125 6.40583 3.125C4.25 3.125 2.5 4.80417 2.5 6.875C2.5 12.8917 10 16.875 10 16.875C10 16.875 17.5 12.8917 17.5 6.875Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
 
-export const XIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+export const ArrowLeftIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          {...props}
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-            clipRule="evenodd"
-          />
-        </svg>
-      )}
-    </>
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M8.75 16.25L2.5 10M2.5 10L8.75 3.75M2.5 10H17.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowRightIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M11.25 3.75L17.5 10M17.5 10L11.25 16.25M17.5 10H2.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const BookIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10 5.03501C8.62634 3.80281 6.84533 3.12246 5 3.12501C4.12333 3.12501 3.28167 3.27501 2.5 3.55167V15.4267C3.30302 15.1434 4.14847 14.9991 5 15C6.92083 15 8.67333 15.7225 10 16.91M10 5.03501C11.3736 3.80274 13.1547 3.12238 15 3.12501C15.8767 3.12501 16.7183 3.27501 17.5 3.55167V15.4267C16.697 15.1434 15.8515 14.9991 15 15C13.1547 14.9975 11.3737 15.6778 10 16.91M10 5.03501V16.91"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CheveronRightIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M6.875 3.75L13.125 10L6.875 16.25"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowsOutIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.125 16.875V13.125M3.125 16.875H6.875M3.125 16.875L7.5 12.5M16.875 3.125H13.125M16.875 3.125V6.875M16.875 3.125L12.5 7.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ChannelsIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.7188 5.875C15.6507 5.875 16.4063 5.11948 16.4063 4.1875C16.4063 3.25552 15.6507 2.5 14.7188 2.5C13.7868 2.5 13.0312 3.25552 13.0312 4.1875C13.0312 5.11948 13.7868 5.875 14.7188 5.875Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M14.7188 11.6875C15.6507 11.6875 16.4063 10.932 16.4063 10C16.4063 9.06802 15.6507 8.3125 14.7188 8.3125C13.7868 8.3125 13.0312 9.06802 13.0312 10C13.0312 10.932 13.7868 11.6875 14.7188 11.6875Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.59375 11.6875C5.52573 11.6875 6.28125 10.932 6.28125 10C6.28125 9.06802 5.52573 8.3125 4.59375 8.3125C3.66177 8.3125 2.90625 9.06802 2.90625 10C2.90625 10.932 3.66177 11.6875 4.59375 11.6875Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M14.7188 17.5C15.6507 17.5 16.4063 16.7445 16.4063 15.8125C16.4063 14.8805 15.6507 14.125 14.7188 14.125C13.7868 14.125 13.0312 14.8805 13.0312 15.8125C13.0312 16.7445 13.7868 17.5 14.7188 17.5Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.0308 4.1875H11.1558C10.327 4.1875 9.65576 4.85875 9.65576 5.6875V14.3125C9.65576 15.1413 10.327 15.8125 11.1558 15.8125H13.0308"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.0303 10H6.28027"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const UserGroupIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.2158 12.9342C14.6056 12.668 15.0628 12.5176 15.5346 12.5004C16.0063 12.4832 16.4733 12.5999 16.8815 12.837C17.2896 13.0741 17.6223 13.422 17.8411 13.8403C18.0598 14.2586 18.1556 14.7303 18.1174 15.2008C17.1176 15.5503 16.0556 15.6863 14.9999 15.6C14.9967 14.6555 14.7247 13.7306 14.2158 12.935C13.764 12.2265 13.1409 11.6434 12.404 11.2396C11.6671 10.8358 10.8402 10.6244 9.99995 10.625C9.15981 10.6246 8.33314 10.836 7.59639 11.2398C6.85964 11.6436 6.23662 12.2266 5.78495 12.935M14.9991 15.5992L14.9999 15.625C14.9999 15.8125 14.9899 15.9975 14.9691 16.18C13.4569 17.0476 11.7434 17.5028 9.99995 17.5C8.19161 17.5 6.49411 17.02 5.03078 16.18C5.00936 15.9871 4.99906 15.7932 4.99995 15.5992M4.99995 15.5992C3.94464 15.6886 2.8832 15.5531 1.88411 15.2017C1.84607 14.7313 1.94194 14.2598 2.16064 13.8416C2.37933 13.4234 2.71192 13.0757 3.11995 12.8386C3.52798 12.6015 3.99478 12.4847 4.46638 12.5018C4.93798 12.5188 5.39512 12.669 5.78495 12.935M4.99995 15.5992C5.00294 14.6548 5.2763 13.7307 5.78495 12.935M12.4999 5.625C12.4999 6.28804 12.2366 6.92393 11.7677 7.39277C11.2989 7.86161 10.663 8.125 9.99995 8.125C9.33691 8.125 8.70102 7.86161 8.23218 7.39277C7.76334 6.92393 7.49995 6.28804 7.49995 5.625C7.49995 4.96196 7.76334 4.32607 8.23218 3.85723C8.70102 3.38839 9.33691 3.125 9.99995 3.125C10.663 3.125 11.2989 3.38839 11.7677 3.85723C12.2366 4.32607 12.4999 4.96196 12.4999 5.625ZM17.4999 8.125C17.4999 8.37123 17.4514 8.61505 17.3572 8.84253C17.263 9.07002 17.1249 9.27672 16.9508 9.45082C16.7767 9.62493 16.57 9.76305 16.3425 9.85727C16.115 9.9515 15.8712 10 15.6249 10C15.3787 10 15.1349 9.9515 14.9074 9.85727C14.6799 9.76305 14.4732 9.62493 14.2991 9.45082C14.125 9.27672 13.9869 9.07002 13.8927 8.84253C13.7984 8.61505 13.7499 8.37123 13.7499 8.125C13.7499 7.62772 13.9475 7.15081 14.2991 6.79917C14.6508 6.44754 15.1277 6.25 15.6249 6.25C16.1222 6.25 16.5991 6.44754 16.9508 6.79917C17.3024 7.15081 17.4999 7.62772 17.4999 8.125ZM6.24995 8.125C6.24995 8.37123 6.20145 8.61505 6.10722 8.84253C6.01299 9.07002 5.87488 9.27672 5.70077 9.45082C5.52666 9.62493 5.31996 9.76305 5.09248 9.85727C4.86499 9.9515 4.62118 10 4.37495 10C4.12872 10 3.8849 9.9515 3.65742 9.85727C3.42993 9.76305 3.22323 9.62493 3.04912 9.45082C2.87501 9.27672 2.7369 9.07002 2.64267 8.84253C2.54845 8.61505 2.49995 8.37123 2.49995 8.125C2.49995 7.62772 2.69749 7.15081 3.04912 6.79917C3.40075 6.44754 3.87767 6.25 4.37495 6.25C4.87223 6.25 5.34914 6.44754 5.70077 6.79917C6.0524 7.15081 6.24995 7.62772 6.24995 8.125Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CopyIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.0517 3.73913L15.4575 2.33246C15.7506 2.0394 16.148 1.87476 16.5625 1.87476C16.977 1.87476 17.3744 2.0394 17.6675 2.33246C17.9606 2.62553 18.1252 3.02301 18.1252 3.43746C18.1252 3.85192 17.9606 4.2494 17.6675 4.54246L8.81833 13.3916C8.37777 13.8319 7.83447 14.1556 7.2375 14.3333L5 15L5.66667 12.7625C5.8444 12.1655 6.16803 11.6222 6.60833 11.1816L14.0517 3.73913ZM14.0517 3.73913L16.25 5.93746M15 11.6666V15.625C15 16.1222 14.8025 16.5992 14.4508 16.9508C14.0992 17.3024 13.6223 17.5 13.125 17.5H4.375C3.87772 17.5 3.40081 17.3024 3.04917 16.9508C2.69754 16.5992 2.5 16.1222 2.5 15.625V6.87496C2.5 6.37768 2.69754 5.90077 3.04917 5.54914C3.40081 5.19751 3.87772 4.99996 4.375 4.99996H8.33333"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const PlusIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10 3.75V16.25M16.25 10H3.75"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CloudArrowIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10.0002 8.12506V13.7501M10.0002 13.7501L7.50017 11.2501M10.0002 13.7501L12.5002 11.2501M5.62517 16.2501C4.73303 16.251 3.86977 15.9339 3.19042 15.3556C2.51107 14.7774 2.06013 13.9758 1.9186 13.095C1.77706 12.2142 1.95419 11.3117 2.41819 10.5497C2.88218 9.78773 3.60264 9.21613 4.45017 8.93756C4.23242 7.82187 4.45747 6.66523 5.07766 5.71257C5.69785 4.75992 6.66448 4.08605 7.77285 3.83368C8.88122 3.58131 10.0443 3.77025 11.0158 4.36049C11.9873 4.95072 12.6909 5.89591 12.9777 6.99589C13.421 6.85171 13.8958 6.83436 14.3485 6.94581C14.8012 7.05726 15.2137 7.29306 15.5394 7.62659C15.8652 7.96012 16.0911 8.37808 16.1918 8.83328C16.2926 9.28847 16.264 9.76275 16.1093 10.2026C16.7915 10.4631 17.361 10.9543 17.719 11.5908C18.0769 12.2274 18.2008 12.9691 18.069 13.6874C17.9373 14.4058 17.5583 15.0553 16.9977 15.5234C16.4372 15.9914 15.7305 16.2485 15.0002 16.2501H5.62517Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const BellAlertSolidIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M4.87497 2.91669C4.97929 2.79237 5.03116 2.63234 5.01961 2.47046C5.00806 2.30858 4.93399 2.15754 4.81307 2.04929C4.69216 1.94104 4.53388 1.88407 4.37171 1.89043C4.20954 1.89678 4.05621 1.96597 3.94414 2.08336C2.92036 3.22523 2.24183 4.63431 1.98747 6.14669C1.96394 6.3084 2.00469 6.4729 2.10098 6.60494C2.19726 6.73697 2.34144 6.82604 2.5026 6.85307C2.66377 6.88009 2.82911 6.84292 2.9632 6.74951C3.09729 6.65611 3.18946 6.5139 3.21997 6.35335C3.43508 5.0742 4.00901 3.88242 4.87497 2.91669ZM16.0558 2.08336C16.0012 2.02163 15.935 1.97131 15.8609 1.93527C15.7868 1.89924 15.7064 1.87821 15.6241 1.87339C15.5419 1.86856 15.4595 1.88005 15.3817 1.90718C15.3039 1.93431 15.2323 1.97655 15.1709 2.03147C15.1095 2.0864 15.0595 2.15291 15.0239 2.22721C14.9883 2.3015 14.9678 2.38209 14.9634 2.46436C14.9591 2.54663 14.971 2.62894 14.9986 2.70657C15.0262 2.7842 15.0689 2.85561 15.1241 2.91669C15.9904 3.88234 16.5646 5.07412 16.78 6.35335C16.8074 6.51691 16.8986 6.66287 17.0337 6.75914C17.1005 6.80681 17.1761 6.84084 17.2561 6.85929C17.3361 6.87775 17.419 6.88026 17.5 6.86669C17.581 6.85312 17.6585 6.82373 17.7281 6.7802C17.7977 6.73668 17.8581 6.67986 17.9058 6.613C17.9534 6.54614 17.9875 6.47055 18.0059 6.39054C18.0244 6.31053 18.0269 6.22767 18.0133 6.14669C17.7584 4.63414 17.0801 3.22506 16.0558 2.08336Z"
+        fill={color}
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M9.99985 1.875C8.50801 1.875 7.07727 2.46763 6.02237 3.52252C4.96748 4.57742 4.37485 6.00816 4.37485 7.5V8.125C4.37741 9.82433 3.74802 11.4639 2.60902 12.725C2.54061 12.8009 2.49186 12.8924 2.46701 12.9915C2.44216 13.0906 2.44198 13.1942 2.46649 13.2934C2.491 13.3926 2.53944 13.4842 2.60758 13.5603C2.67572 13.6365 2.76148 13.6947 2.85735 13.73C4.14402 14.205 5.49068 14.555 6.88318 14.7658C6.85183 15.1943 6.90915 15.6246 7.05157 16.0299C7.19399 16.4352 7.41845 16.8068 7.71093 17.1214C8.0034 17.4361 8.35762 17.6871 8.75144 17.8587C9.14527 18.0303 9.57025 18.1189 9.99985 18.1189C10.4294 18.1189 10.8544 18.0303 11.2483 17.8587C11.6421 17.6871 11.9963 17.4361 12.2888 17.1214C12.5812 16.8068 12.8057 16.4352 12.9481 16.0299C13.0905 15.6246 13.1479 15.1943 13.1165 14.7658C14.4899 14.5576 15.8385 14.2103 17.1415 13.7292C17.2372 13.6938 17.3229 13.6356 17.3909 13.5595C17.4589 13.4835 17.5073 13.3919 17.5318 13.2929C17.5563 13.1938 17.5561 13.0903 17.5314 12.9913C17.5067 12.8923 17.4581 12.8009 17.3898 12.725C16.2511 11.4638 15.6221 9.82422 15.6248 8.125V7.5C15.6248 6.00816 15.0322 4.57742 13.9773 3.52252C12.9224 2.46763 11.4917 1.875 9.99985 1.875ZM8.12485 15C8.12485 14.9717 8.12485 14.9442 8.12652 14.9167C9.37288 15.029 10.6268 15.029 11.8732 14.9167L11.8748 15C11.8748 15.4973 11.6773 15.9742 11.3257 16.3258C10.974 16.6775 10.4971 16.875 9.99985 16.875C9.50257 16.875 9.02566 16.6775 8.67402 16.3258C8.32239 15.9742 8.12485 15.4973 8.12485 15Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const GiftIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M14 6.00001C14.197 5.73737 14.3403 5.4385 14.4218 5.12046C14.5033 4.80243 14.5213 4.47146 14.4749 4.14646C14.4284 3.82145 14.3185 3.50877 14.1512 3.22628C13.9839 2.94378 13.7626 2.69699 13.5 2.50001C13.2374 2.30303 12.9385 2.15971 12.6205 2.07823C12.3024 1.99675 11.9715 1.97871 11.6464 2.02514C11.3214 2.07157 11.0088 2.18155 10.7263 2.34882C10.4438 2.51609 10.197 2.73737 10 3.00001C9.60218 2.46958 9.00993 2.1189 8.35355 2.02514C7.69718 1.93137 7.03043 2.10219 6.5 2.50001C5.96957 2.89784 5.61889 3.49008 5.52513 4.14646C5.43136 4.80283 5.60218 5.46958 6 6.00001H3.25C2.56 6.00001 2 6.56001 2 7.25001V7.75001C2 8.44001 2.56 9.00001 3.25 9.00001H9.25V6.00001H10.75V9.00001H16.75C17.44 9.00001 18 8.44001 18 7.75001V7.25001C18 6.56001 17.44 6.00001 16.75 6.00001H14ZM13 4.50001C13 4.76523 12.8946 5.01958 12.7071 5.20712C12.5196 5.39465 12.2652 5.50001 12 5.50001H11V4.50001C11 4.23479 11.1054 3.98044 11.2929 3.7929C11.4804 3.60537 11.7348 3.50001 12 3.50001C12.2652 3.50001 12.5196 3.60537 12.7071 3.7929C12.8946 3.98044 13 4.23479 13 4.50001ZM7 4.50001C7 4.76523 7.10536 5.01958 7.29289 5.20712C7.48043 5.39465 7.73478 5.50001 8 5.50001H9V4.50001C9 4.23479 8.89464 3.98044 8.70711 3.7929C8.51957 3.60537 8.26522 3.50001 8 3.50001C7.73478 3.50001 7.48043 3.60537 7.29289 3.7929C7.10536 3.98044 7 4.23479 7 4.50001Z"
+        fill={color}
+      />
+      <path
+        d="M9.25 10.5H3V15.25C3 15.9793 3.28973 16.6788 3.80546 17.1945C4.32118 17.7103 5.02065 18 5.75 18H9.25V10.5ZM10.75 18V10.5H17V15.25C17 15.9793 16.7103 16.6788 16.1945 17.1945C15.6788 17.7103 14.9793 18 14.25 18H10.75Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const ArrowDownTrayIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2.5 13.75V15.625C2.5 16.1223 2.69754 16.5992 3.04917 16.9508C3.40081 17.3025 3.87772 17.5 4.375 17.5H15.625C16.1223 17.5 16.5992 17.3025 16.9508 16.9508C17.3025 16.5992 17.5 16.1223 17.5 15.625V13.75M13.75 10L10 13.75M10 13.75L6.25 10M10 13.75V2.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const LightBulbIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10.0005 14.5884V10.5729M10.0005 10.5729C10.3874 10.5732 10.7729 10.5246 11.1477 10.4283M10.0005 10.5729C9.61347 10.5732 9.228 10.5246 8.85318 10.4283M11.7214 16.1479C10.5843 16.3638 9.41666 16.3638 8.27954 16.1479M11.1477 17.9706C10.385 18.0504 9.61595 18.0504 8.85318 17.9706M11.7214 14.5884V14.4415C11.7214 13.6897 12.2247 13.0472 12.8748 12.6701C13.967 12.0376 14.8201 11.0626 15.302 9.89603C15.7838 8.72949 15.8675 7.43661 15.54 6.21769C15.2126 4.99877 14.4923 3.92188 13.4907 3.15387C12.4891 2.38586 11.2622 1.9696 10.0001 1.9696C8.73794 1.9696 7.51104 2.38586 6.50947 3.15387C5.50789 3.92188 4.78757 4.99877 4.46011 6.21769C4.13265 7.43661 4.21633 8.72949 4.69818 9.89603C5.18003 11.0626 6.03316 12.0376 7.12537 12.6701C7.7755 13.0472 8.27954 13.6897 8.27954 14.4415V14.5884"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const PhoneIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M8.75 1.25H6.875C6.37772 1.25 5.90081 1.44754 5.54917 1.79917C5.19754 2.15081 5 2.62772 5 3.125V16.875C5 17.3723 5.19754 17.8492 5.54917 18.2008C5.90081 18.5525 6.37772 18.75 6.875 18.75H13.125C13.6223 18.75 14.0992 18.5525 14.4508 18.2008C14.8025 17.8492 15 17.3723 15 16.875V3.125C15 2.62772 14.8025 2.15081 14.4508 1.79917C14.0992 1.44754 13.6223 1.25 13.125 1.25H11.25M8.75 1.25V2.5H11.25V1.25M8.75 1.25H11.25M8.75 16.875H11.25"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowPathIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.6824 8.23196H16.0104L13.8897 6.10996C13.207 5.42721 12.3566 4.93622 11.4239 4.68636C10.4912 4.4365 9.50922 4.43658 8.57659 4.68658C7.64397 4.93657 6.79359 5.42768 6.11095 6.11054C5.4283 6.79339 4.93745 7.64392 4.68775 8.57663M3.99041 15.096V11.768M3.99041 11.768H7.31841M3.99041 11.768L6.11041 13.89C6.79316 14.5727 7.64361 15.0637 8.57627 15.3136C9.50894 15.5634 10.4909 15.5633 11.4236 15.3133C12.3562 15.0633 13.2066 14.5722 13.8892 13.8894C14.5719 13.2065 15.0627 12.356 15.3124 11.4233M16.0104 4.90396V8.23063"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const SquareTwoIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.2763 7.26995V5.63192C13.2763 5.19749 13.1037 4.78085 12.7965 4.47366C12.4893 4.16647 12.0727 3.9939 11.6383 3.9939H5.63217C5.19774 3.9939 4.7811 4.16647 4.47391 4.47366C4.16672 4.78085 3.99414 5.19749 3.99414 5.63192V11.638C3.99414 12.0725 4.16672 12.4891 4.47391 12.7963C4.7811 13.1035 5.19774 13.2761 5.63217 13.2761H7.2702M13.2763 7.26995H14.3683C14.8028 7.26995 15.2194 7.44253 15.5266 7.74972C15.8338 8.05691 16.0063 8.47355 16.0063 8.90798V14.3681C16.0063 14.8025 15.8338 15.2191 15.5266 15.5263C15.2194 15.8335 14.8028 16.0061 14.3683 16.0061H8.90823C8.47379 16.0061 8.05715 15.8335 7.74996 15.5263C7.44277 15.2191 7.2702 14.8025 7.2702 14.3681V13.2761M13.2763 7.26995H8.90823C8.47379 7.26995 8.05715 7.44253 7.74996 7.74972C7.44277 8.05691 7.2702 8.47355 7.2702 8.90798V13.2761"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowLeftMiniIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M9.5 5.5L5 10M5 10L9.5 14.5M5 10H15"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const PhotoIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M1.875 13.125L6.17417 8.82583C6.34828 8.65172 6.55498 8.51361 6.78246 8.41938C7.00995 8.32515 7.25377 8.27665 7.5 8.27665C7.74623 8.27665 7.99005 8.32515 8.21754 8.41938C8.44502 8.51361 8.65172 8.65172 8.82583 8.82583L13.125 13.125M11.875 11.875L13.0492 10.7008C13.2233 10.5267 13.43 10.3886 13.6575 10.2944C13.885 10.2001 14.1288 10.1516 14.375 10.1516C14.6212 10.1516 14.865 10.2001 15.0925 10.2944C15.32 10.3886 15.5267 10.5267 15.7008 10.7008L18.125 13.125M3.125 16.25H16.875C17.2065 16.25 17.5245 16.1183 17.7589 15.8839C17.9933 15.6495 18.125 15.3315 18.125 15V5C18.125 4.66848 17.9933 4.35054 17.7589 4.11612C17.5245 3.8817 17.2065 3.75 16.875 3.75H3.125C2.79348 3.75 2.47554 3.8817 2.24112 4.11612C2.0067 4.35054 1.875 4.66848 1.875 5V15C1.875 15.3315 2.0067 15.6495 2.24112 15.8839C2.47554 16.1183 2.79348 16.25 3.125 16.25ZM11.875 6.875H11.8817V6.88167H11.875V6.875ZM12.1875 6.875C12.1875 6.95788 12.1546 7.03737 12.096 7.09597C12.0374 7.15458 11.9579 7.1875 11.875 7.1875C11.7921 7.1875 11.7126 7.15458 11.654 7.09597C11.5954 7.03737 11.5625 6.95788 11.5625 6.875C11.5625 6.79212 11.5954 6.71263 11.654 6.65403C11.7126 6.59542 11.7921 6.5625 11.875 6.5625C11.9579 6.5625 12.0374 6.59542 12.096 6.65403C12.1546 6.71263 12.1875 6.79212 12.1875 6.875Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const TextIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2.57178 12.3555H9.06527"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5.82551 4.82349L1.86572 14.003"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.77162 14.003L5.82568 4.82349"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M18.1343 8.45117V13.9893"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M17.3185 9.25276C18.4059 10.3401 18.4059 12.103 17.3185 13.1904C16.2312 14.2777 14.4683 14.2777 13.3809 13.1904C12.2936 12.103 12.2936 10.3401 13.3809 9.25276C14.4683 8.16542 16.2312 8.16542 17.3185 9.25276Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const QuestionMarkIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.43945 5.51484C8.61045 4.48984 10.5105 4.48984 11.6815 5.51484C12.8535 6.53984 12.8535 8.20184 11.6815 9.22684C11.4785 9.40584 11.2515 9.55284 11.0115 9.66884C10.2665 10.0298 9.56145 10.6678 9.56145 11.4958V12.2458M9.56045 15.2458H9.56845V15.2538H9.56045V15.2458Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CameraIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5.68917 5.14576C5.53916 5.38319 5.33902 5.58491 5.10278 5.73679C4.86655 5.88866 4.59994 5.98701 4.32167 6.02493C4.005 6.06993 3.69083 6.11826 3.37667 6.17076C2.49917 6.31659 1.875 7.08909 1.875 7.97826V14.9999C1.875 15.4972 2.07254 15.9741 2.42417 16.3258C2.77581 16.6774 3.25272 16.8749 3.75 16.8749H16.25C16.7473 16.8749 17.2242 16.6774 17.5758 16.3258C17.9275 15.9741 18.125 15.4972 18.125 14.9999V7.97826C18.125 7.08909 17.5 6.31659 16.6233 6.17076C16.3089 6.11838 15.9939 6.06976 15.6783 6.02493C15.4002 5.98689 15.1338 5.88849 14.8977 5.73662C14.6616 5.58475 14.4616 5.38309 14.3117 5.14576L13.6267 4.04909C13.4728 3.79918 13.261 3.59 13.0092 3.43929C12.7574 3.28858 12.473 3.20075 12.18 3.18326C10.7277 3.10525 9.27229 3.10525 7.82 3.18326C7.52705 3.20075 7.24262 3.28858 6.9908 3.43929C6.73898 3.59 6.52718 3.79918 6.37333 4.04909L5.68917 5.14576Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.75 10.625C13.75 11.6196 13.3549 12.5734 12.6516 13.2766C11.9484 13.9799 10.9946 14.375 10 14.375C9.00544 14.375 8.05161 13.9799 7.34835 13.2766C6.64509 12.5734 6.25 11.6196 6.25 10.625C6.25 9.63044 6.64509 8.67661 7.34835 7.97335C8.05161 7.27009 9.00544 6.875 10 6.875C10.9946 6.875 11.9484 7.27009 12.6516 7.97335C13.3549 8.67661 13.75 9.63044 13.75 10.625ZM15.625 8.75H15.6317V8.75667H15.625V8.75Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const MapPinIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.5 8.4375C12.5 9.10054 12.2366 9.73643 11.7678 10.2053C11.2989 10.6741 10.663 10.9375 10 10.9375C9.33696 10.9375 8.70107 10.6741 8.23223 10.2053C7.76339 9.73643 7.5 9.10054 7.5 8.4375C7.5 7.77446 7.76339 7.13857 8.23223 6.66973C8.70107 6.20089 9.33696 5.9375 10 5.9375C10.663 5.9375 11.2989 6.20089 11.7678 6.66973C12.2366 7.13857 12.5 7.77446 12.5 8.4375V8.4375Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M16.25 8.4375C16.25 14.3892 10 17.8125 10 17.8125C10 17.8125 3.75 14.3892 3.75 8.4375C3.75 6.7799 4.40848 5.19018 5.58058 4.01808C6.75268 2.84598 8.3424 2.1875 10 2.1875C11.6576 2.1875 13.2473 2.84598 14.4194 4.01808C15.5915 5.19018 16.25 6.7799 16.25 8.4375V8.4375Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowUturnLeftIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.66703 12.333L3.00098 7.66697M3.00098 7.66697L7.66703 3.00092M3.00098 7.66697H12.3331C13.5706 7.66697 14.7574 8.15857 15.6325 9.03362C16.5075 9.90868 16.9991 11.0955 16.9991 12.333C16.9991 13.5705 16.5075 14.7574 15.6325 15.6324C14.7574 16.5075 13.5706 16.9991 12.3331 16.9991H10.0001"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CloseIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5 15L15 5M5 5L15 15"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const QuestionMarkCircleIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M8.2325 6.26583C9.20833 5.41167 10.7917 5.41167 11.7675 6.26583C12.7442 7.12 12.7442 8.505 11.7675 9.35917C11.5983 9.50833 11.4092 9.63083 11.2092 9.7275C10.5883 10.0283 10.0008 10.56 10.0008 11.25V11.875M17.5 10C17.5 10.9849 17.306 11.9602 16.9291 12.8701C16.5522 13.7801 15.9997 14.6069 15.3033 15.3033C14.6069 15.9997 13.7801 16.5522 12.8701 16.9291C11.9602 17.306 10.9849 17.5 10 17.5C9.01509 17.5 8.03982 17.306 7.12987 16.9291C6.21993 16.5522 5.39314 15.9997 4.6967 15.3033C4.00026 14.6069 3.44781 13.7801 3.0709 12.8701C2.69399 11.9602 2.5 10.9849 2.5 10C2.5 8.01088 3.29018 6.10322 4.6967 4.6967C6.10322 3.29018 8.01088 2.5 10 2.5C11.9891 2.5 13.8968 3.29018 15.3033 4.6967C16.7098 6.10322 17.5 8.01088 17.5 10ZM10 14.375H10.0067V14.3817H10V14.375Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ExclamationCircleIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M17.5 10C17.5 10.9849 17.306 11.9602 16.9291 12.8701C16.5522 13.7801 15.9997 14.6069 15.3033 15.3033C14.6069 15.9997 13.7801 16.5522 12.8701 16.9291C11.9602 17.306 10.9849 17.5 10 17.5C9.01509 17.5 8.03982 17.306 7.12987 16.9291C6.21993 16.5522 5.39314 15.9997 4.6967 15.3033C4.00026 14.6069 3.44781 13.7801 3.0709 12.8701C2.69399 11.9602 2.5 10.9849 2.5 10C2.5 8.01088 3.29018 6.10322 4.6967 4.6967C6.10322 3.29018 8.01088 2.5 10 2.5C11.9891 2.5 13.8968 3.29018 15.3033 4.6967C16.7098 6.10322 17.5 8.01088 17.5 10Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.99609 6.62097V10.371M9.99609 13.371H10.0041V13.379H9.99609V13.371Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const MessageIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M17.5625 5.92787V14.0721C17.5625 14.535 17.3786 14.9789 17.0513 15.3061C16.7241 15.6334 16.2802 15.8173 15.8173 15.8173H4.18269C3.71984 15.8173 3.27594 15.6334 2.94865 15.3061C2.62137 14.9789 2.4375 14.535 2.4375 14.0721V5.92787M17.5625 5.92787C17.5625 5.46502 17.3786 5.02112 17.0513 4.69383C16.7241 4.36655 16.2802 4.18268 15.8173 4.18268H4.18269C3.71984 4.18268 3.27594 4.36655 2.94865 4.69383C2.62137 5.02112 2.4375 5.46502 2.4375 5.92787M17.5625 5.92787V6.11635C17.5625 6.41431 17.4863 6.70732 17.341 6.96746C17.1957 7.2276 16.9863 7.44622 16.7326 7.60248L10.9153 11.1821C10.6401 11.3516 10.3232 11.4413 10 11.4413C9.67679 11.4413 9.35994 11.3516 9.08474 11.1821L3.26744 7.60326C3.01374 7.44699 2.80428 7.22838 2.659 6.96823C2.51372 6.70809 2.43747 6.41509 2.4375 6.11713V5.92787"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const DocumentTextIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M16.25 11.8462V9.69231C16.25 8.95786 15.9537 8.2535 15.4262 7.73417C14.8988 7.21483 14.1834 6.92308 13.4375 6.92308H12.1875C11.9389 6.92308 11.7004 6.82582 11.5246 6.65271C11.3488 6.4796 11.25 6.24482 11.25 6V4.76923C11.25 4.03479 10.9537 3.33042 10.4262 2.81109C9.89879 2.29176 9.18342 2 8.4375 2H6.875M6.875 12.4615H13.125M6.875 14.9231H10M8.75 2H4.6875C4.17 2 3.75 2.41354 3.75 2.92308V17.0769C3.75 17.5865 4.17 18 4.6875 18H15.3125C15.83 18 16.25 17.5865 16.25 17.0769V9.38462C16.25 7.42609 15.4598 5.54779 14.0533 4.1629C12.6468 2.77802 10.7391 2 8.75 2V2Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowDownIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M16.25 11.25L10 17.5M10 17.5L3.75 11.25M10 17.5V2.5"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArrowDownMiniIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M15 11L10 16M10 16L5 11M10 16V4"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const FolderIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2.49219 10.5776V10.0001C2.49219 9.54054 2.67473 9.09985 2.99965 8.77493C3.32458 8.45 3.76527 8.26746 4.22478 8.26746H15.7754C16.2349 8.26746 16.6756 8.45 17.0005 8.77493C17.3254 9.09985 17.508 9.54054 17.508 10.0001V10.5776M10.8163 5.61852L9.18384 3.98603C9.07659 3.87865 8.94924 3.79346 8.80905 3.73533C8.66886 3.67719 8.51859 3.64725 8.36683 3.64722H4.22478C3.76527 3.64722 3.32458 3.82976 2.99965 4.15468C2.67473 4.47961 2.49219 4.9203 2.49219 5.37981V14.6203C2.49219 15.0798 2.67473 15.5205 2.99965 15.8454C3.32458 16.1703 3.76527 16.3529 4.22478 16.3529H15.7754C16.2349 16.3529 16.6756 16.1703 17.0005 15.8454C17.3254 15.5205 17.508 15.0798 17.508 14.6203V7.68993C17.508 7.23042 17.3254 6.78973 17.0005 6.4648C16.6756 6.13988 16.2349 5.95734 15.7754 5.95734H11.6333C11.3271 5.95707 11.0327 5.8352 10.8163 5.61852Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const FolderOpenIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.49557 8.24656C3.58387 8.23316 3.67454 8.22607 3.76678 8.22607H16.2328C16.325 8.22607 16.4157 8.23316 16.504 8.24656M3.49557 8.24656C3.03418 8.31802 2.61956 8.5685 2.34165 8.94367C2.06373 9.31884 1.94494 9.78846 2.01103 10.2507L2.68668 14.981C2.74703 15.4037 2.95781 15.7904 3.28032 16.0702C3.60284 16.35 4.01546 16.5041 4.44243 16.5042H15.5579C15.9849 16.5041 16.3975 16.35 16.72 16.0702C17.0426 15.7904 17.2533 15.4037 17.3137 14.981L17.9893 10.2507C18.0554 9.78846 17.9366 9.31884 17.6587 8.94367C17.3808 8.5685 16.9654 8.31802 16.504 8.24656M3.49557 8.24656L3.49636 5.2696C3.49636 4.79928 3.68314 4.34821 4.01564 4.01556C4.34813 3.68292 4.79912 3.49594 5.26945 3.49573H8.32761C8.64115 3.496 8.94174 3.62078 9.16331 3.84262L10.8363 5.51401C11.0578 5.73585 11.3584 5.86062 11.672 5.8609H14.7301C15.2006 5.8609 15.6518 6.04779 15.9844 6.38045C16.3171 6.71312 16.504 7.16431 16.504 7.63477V8.24656"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CheveronUpMiniIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M15 12L10 7L5 12"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const DataBaseIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M16.875 5.3125C16.875 7.21083 13.7967 8.75 10 8.75C6.20333 8.75 3.125 7.21083 3.125 5.3125M16.875 5.3125C16.875 3.41417 13.7967 1.875 10 1.875C6.20333 1.875 3.125 3.41417 3.125 5.3125M16.875 5.3125V14.6875C16.875 16.5858 13.7967 18.125 10 18.125C6.20333 18.125 3.125 16.5858 3.125 14.6875V5.3125M16.875 5.3125V8.4375M3.125 5.3125V8.4375M16.875 8.4375V11.5625C16.875 13.4608 13.7967 15 10 15C6.20333 15 3.125 13.4608 3.125 11.5625V8.4375M16.875 8.4375C16.875 10.3358 13.7967 11.875 10 11.875C6.20333 11.875 3.125 10.3358 3.125 8.4375"
+        stroke={color}
+        stroke-width="1.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const LinkIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M10.9917 7.24002C11.5332 7.49857 12.0048 7.8833 12.3668 8.36189C12.7288 8.84048 12.9706 9.39895 13.072 9.9904C13.1735 10.5818 13.1314 11.189 12.9495 11.7608C12.7676 12.3327 12.4512 12.8525 12.0267 13.2767L8.27669 17.0267C7.57342 17.73 6.61959 18.125 5.62502 18.125C4.63046 18.125 3.67662 17.73 2.97336 17.0267C2.27009 16.3234 1.875 15.3696 1.875 14.375C1.875 13.3805 2.27009 12.4266 2.97336 11.7234L4.43752 10.2592M15.5625 9.74086L17.0267 8.27669C17.73 7.57342 18.125 6.61959 18.125 5.62502C18.125 4.63046 17.73 3.67662 17.0267 2.97336C16.3234 2.27009 15.3696 1.875 14.375 1.875C13.3805 1.875 12.4266 2.27009 11.7234 2.97336L7.97336 6.72336C7.54889 7.14752 7.23241 7.66736 7.05051 8.23921C6.86861 8.81105 6.82659 9.4182 6.928 10.0096C7.0294 10.6011 7.27126 11.1596 7.63327 11.6382C7.99527 12.1167 8.46683 12.5015 9.00836 12.76"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const PencilIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.0517 3.73913L15.4575 2.33246C15.7506 2.0394 16.148 1.87476 16.5625 1.87476C16.977 1.87476 17.3744 2.0394 17.6675 2.33246C17.9606 2.62553 18.1252 3.02301 18.1252 3.43746C18.1252 3.85192 17.9606 4.2494 17.6675 4.54246L5.69333 16.5166C5.25277 16.9569 4.70947 17.2806 4.1125 17.4583L1.875 18.125L2.54167 15.8875C2.7194 15.2905 3.04303 14.7472 3.48333 14.3066L14.0525 3.73913H14.0517ZM14.0517 3.73913L16.25 5.93746"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EllipseIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <circle cx="10" cy="10" r="4" fill={color} />
+    </svg>
+  );
+};
+
+export const AcademicCapIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.54982 8.45564C3.3206 10.2103 3.18403 11.9758 3.14065 13.7448C5.53964 14.7469 7.83661 15.9776 9.99982 17.4198C12.1633 15.9776 14.4605 14.7469 16.8598 13.7448C16.8164 11.9758 16.6798 10.2103 16.4507 8.45564M16.4507 8.45564C17.1798 8.21064 17.919 7.98398 18.6657 7.77731C15.9461 5.87085 13.0431 4.24055 9.99982 2.91064C6.95648 4.24083 4.05348 5.87141 1.33398 7.77814C2.07839 7.98364 2.817 8.20956 3.54898 8.45564C5.77286 9.20325 7.9306 10.1348 9.99982 11.2406C12.0688 10.1349 14.2271 9.20331 16.4507 8.45564ZM5.62482 12.4998C5.79058 12.4998 5.94955 12.434 6.06676 12.3168C6.18397 12.1995 6.24982 12.0406 6.24982 11.8748C6.24982 11.7091 6.18397 11.5501 6.06676 11.4329C5.94955 11.3157 5.79058 11.2498 5.62482 11.2498C5.45906 11.2498 5.30009 11.3157 5.18288 11.4329C5.06567 11.5501 4.99982 11.7091 4.99982 11.8748C4.99982 12.0406 5.06567 12.1995 5.18288 12.3168C5.30009 12.434 5.45906 12.4998 5.62482 12.4998ZM5.62482 12.4998V9.43731C7.03876 8.55843 8.49923 7.7567 9.99982 7.03564M4.16065 16.6606C4.62563 16.1968 4.99435 15.6457 5.24562 15.0389C5.49689 14.4321 5.62576 13.7816 5.62482 13.1248V11.8748"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const LikeIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5.5275 8.75C6.19917 8.75 6.805 8.37833 7.22 7.85C7.86688 7.02468 8.67893 6.34349 9.60417 5.85C10.2067 5.53 10.7292 5.05333 10.9817 4.42083C11.159 3.97771 11.2501 3.50479 11.25 3.0275V2.5C11.25 2.33424 11.3159 2.17527 11.4331 2.05806C11.5503 1.94085 11.7092 1.875 11.875 1.875C12.3723 1.875 12.8492 2.07254 13.2008 2.42417C13.5525 2.77581 13.75 3.25272 13.75 3.75C13.75 4.71 13.5333 5.61917 13.1475 6.43167C12.9258 6.89667 13.2367 7.5 13.7517 7.5H16.3567C17.2117 7.5 17.9775 8.07833 18.0683 8.92917C18.1058 9.28083 18.125 9.6375 18.125 10C18.1284 12.2803 17.3492 14.4927 15.9175 16.2675C15.5942 16.6692 15.095 16.875 14.58 16.875H11.2333C10.8308 16.875 10.43 16.81 10.0475 16.6833L7.4525 15.8167C7.07009 15.6895 6.66968 15.6248 6.26667 15.625H4.92M4.92 15.625C4.98917 15.7958 5.06417 15.9625 5.145 16.1267C5.30917 16.46 5.08 16.875 4.70917 16.875H3.9525C3.21167 16.875 2.525 16.4433 2.30917 15.735C2.02054 14.7877 1.87422 13.8028 1.875 12.8125C1.875 11.5183 2.12084 10.2825 2.5675 9.1475C2.8225 8.5025 3.4725 8.125 4.16667 8.125H5.04417C5.4375 8.125 5.665 8.58833 5.46084 8.925C4.74908 10.0966 4.37369 11.4416 4.37584 12.8125C4.37584 13.8075 4.56917 14.7567 4.92084 15.625H4.92ZM11.875 7.5H13.75"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const DislikeIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M6.25001 12.5H8.12501M14.8117 4.375C14.8208 4.41667 14.835 4.45833 14.855 4.49833C15.3475 5.49833 15.625 6.62333 15.625 7.8125C15.6268 9.00847 15.3413 10.1874 14.7925 11.25M14.8117 4.375C14.7483 4.07083 14.9642 3.75 15.2908 3.75H16.0475C16.7883 3.75 17.475 4.18167 17.6908 4.89C17.9733 5.815 18.125 6.79583 18.125 7.8125C18.125 9.10667 17.8792 10.3425 17.4325 11.4775C17.1775 12.1225 16.5275 12.5 15.8333 12.5H14.9558C14.5625 12.5 14.335 12.0367 14.5392 11.7C14.6285 11.553 14.7136 11.4029 14.7925 11.25M14.8117 4.375H13.7333C13.3303 4.37525 12.9299 4.31053 12.5475 4.18333L9.95251 3.31667C9.5701 3.18947 9.16969 3.12475 8.76668 3.125H5.42001C4.90501 3.125 4.40584 3.33083 4.08251 3.7325C2.6508 5.50731 1.87157 7.71971 1.87501 10C1.87501 10.3617 1.89418 10.7192 1.93168 11.0708C2.02251 11.9217 2.78834 12.5 3.64334 12.5H6.24835C6.76335 12.5 7.07418 13.1033 6.85251 13.5683C6.45441 14.4062 6.24856 15.3224 6.25001 16.25C6.25001 16.7473 6.44756 17.2242 6.79919 17.5758C7.15082 17.9275 7.62773 18.125 8.12501 18.125C8.29077 18.125 8.44974 18.0592 8.56695 17.9419C8.68416 17.8247 8.75001 17.6658 8.75001 17.5V16.9725C8.75001 16.495 8.84168 16.0225 9.01834 15.5792C9.27168 14.9458 9.79335 14.4708 10.3958 14.15C11.3208 13.6564 12.1326 12.9752 12.7792 12.15C13.1942 11.6217 13.8008 11.25 14.4725 11.25H14.7925"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ArchiveBoxIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M16.875 6.25L16.3542 15.11C16.3261 15.5875 16.1166 16.0363 15.7685 16.3644C15.4204 16.6925 14.96 16.8752 14.4817 16.875H5.51833C5.03997 16.8752 4.57962 16.6925 4.23152 16.3644C3.88342 16.0363 3.6739 15.5875 3.64583 15.11L3.125 6.25M8.33333 9.375H11.6667M2.8125 6.25H17.1875C17.705 6.25 18.125 5.83 18.125 5.3125V4.0625C18.125 3.545 17.705 3.125 17.1875 3.125H2.8125C2.295 3.125 1.875 3.545 1.875 4.0625V5.3125C1.875 5.83 2.295 6.25 2.8125 6.25Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ComponentIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5.125 7.37509L7.75 10.0001L5.125 12.6251L2.5 10.0001L5.125 7.37509Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.99951 2.5L12.6245 5.125L9.99951 7.75L7.37451 5.125L9.99951 2.5Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M14.875 7.37509L17.5 10.0001L14.875 12.6251L12.25 10.0001L14.875 7.37509Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.99951 12.25L12.6245 14.875L9.99951 17.5L7.37451 14.875L9.99951 12.25Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ComponentSolidIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5.125 7.37509L7.75 10.0001L5.125 12.6251L2.5 10.0001L5.125 7.37509Z"
+        fill={color}
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.99951 2.5L12.6245 5.125L9.99951 7.75L7.37451 5.125L9.99951 2.5Z"
+        fill={color}
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M14.875 7.37509L17.5 10.0001L14.875 12.6251L12.25 10.0001L14.875 7.37509Z"
+        fill={color}
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9.99951 12.25L12.6245 14.875L9.99951 17.5L7.37451 14.875L9.99951 12.25Z"
+        fill={color}
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CreditCardIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2.06104 6.9479H17.9438M2.06104 7.55877H17.9438M4.50453 11.5391H9.33962M4.50453 13.6675H6.94803M3.89366 16.111H16.1111C16.5972 16.111 17.0633 15.9179 17.407 15.5742C17.7507 15.2306 17.9438 14.7644 17.9438 14.2784V5.72615C17.9438 5.24011 17.7507 4.77397 17.407 4.43029C17.0633 4.0866 16.5972 3.89352 16.1111 3.89352H3.89366C3.40762 3.89352 2.94148 4.0866 2.5978 4.43029C2.25411 4.77397 2.06104 5.24011 2.06104 5.72615V14.2784C2.06104 14.7644 2.25411 15.2306 2.5978 15.5742C2.94148 15.9179 3.40762 16.111 3.89366 16.111Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const StarIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M9.56687 2.91581C9.60212 2.82983 9.66214 2.75629 9.73931 2.70452C9.81647 2.65276 9.90729 2.62512 10.0002 2.62512C10.0931 2.62512 10.1839 2.65276 10.2611 2.70452C10.3383 2.75629 10.3983 2.82983 10.4335 2.91581L12.2044 7.17497C12.2375 7.25467 12.292 7.32368 12.3619 7.3744C12.4317 7.42513 12.5142 7.4556 12.6002 7.46248L17.1985 7.83081C17.6144 7.86414 17.7827 8.38331 17.466 8.65414L13.9627 11.6558C13.8973 11.7118 13.8485 11.7847 13.8217 11.8666C13.795 11.9485 13.7913 12.0361 13.811 12.12L14.8819 16.6075C14.9034 16.6975 14.8978 16.7919 14.8657 16.8787C14.8336 16.9656 14.7765 17.0409 14.7016 17.0953C14.6267 17.1497 14.5373 17.1807 14.4448 17.1843C14.3523 17.188 14.2608 17.1641 14.1819 17.1158L10.2444 14.7116C10.1708 14.6668 10.0863 14.6431 10.0002 14.6431C9.91407 14.6431 9.82959 14.6668 9.75604 14.7116L5.81854 17.1166C5.73959 17.165 5.64808 17.1888 5.55559 17.1852C5.46309 17.1815 5.37375 17.1505 5.29885 17.0962C5.22394 17.0418 5.16684 16.9664 5.13475 16.8796C5.10266 16.7927 5.09702 16.6983 5.11854 16.6083L6.18937 12.12C6.20923 12.0361 6.20558 11.9485 6.17882 11.8666C6.15207 11.7847 6.10324 11.7117 6.03771 11.6558L2.53437 8.65414C2.46422 8.59382 2.41347 8.5141 2.3885 8.425C2.36353 8.33591 2.36546 8.24143 2.39405 8.15343C2.42264 8.06543 2.47661 7.98785 2.54918 7.93045C2.62174 7.87305 2.70966 7.83838 2.80187 7.83081L7.40021 7.46248C7.48625 7.4556 7.56873 7.42513 7.63856 7.3744C7.7084 7.32368 7.76289 7.25467 7.79604 7.17497L9.56687 2.91664V2.91581Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const StarSolidIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8.99008 2.67496C9.36342 1.77746 10.6368 1.77746 11.0101 2.67496L12.7451 6.84746L17.2484 7.20829C18.2184 7.28579 18.6118 8.49579 17.8726 9.12912L14.4418 12.0683L15.4893 16.4625C15.7151 17.4091 14.6859 18.1566 13.8559 17.65L10.0001 15.295L6.14425 17.65C5.31425 18.1566 4.28508 17.4083 4.51092 16.4625L5.55842 12.0683L2.12758 9.12912C1.38842 8.49579 1.78175 7.28579 2.75175 7.20829L7.25508 6.84746L8.99008 2.67579V2.67496Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const PlayIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M5 5.76835C5 4.81768 6.01933 4.21502 6.85267 4.67302L14.546 8.90501C15.4093 9.37968 15.4093 10.6203 14.546 11.095L6.85333 15.327C6.02 15.785 5.00067 15.1823 5.00067 14.2317L5 5.76835Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const TrashIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.2833 7.49995L11.995 14.9999M8.005 14.9999L7.71667 7.49995M16.0233 4.82495C16.3083 4.86828 16.5917 4.91411 16.875 4.96328M16.0233 4.82578L15.1333 16.3941C15.097 16.8651 14.8842 17.3051 14.5375 17.626C14.1908 17.9469 13.7358 18.1251 13.2633 18.1249H6.73667C6.26425 18.1251 5.80919 17.9469 5.46248 17.626C5.11578 17.3051 4.90299 16.8651 4.86667 16.3941L3.97667 4.82495M16.0233 4.82495C15.0616 4.67954 14.0948 4.56919 13.125 4.49411M3.125 4.96245C3.40833 4.91328 3.69167 4.86745 3.97667 4.82495M3.97667 4.82495C4.93844 4.67955 5.9052 4.56919 6.875 4.49411M13.125 4.49411V3.73078C13.125 2.74745 12.3667 1.92745 11.3833 1.89661C10.4613 1.86714 9.53865 1.86714 8.61667 1.89661C7.63333 1.92745 6.875 2.74828 6.875 3.73078V4.49411M13.125 4.49411C11.0448 4.33334 8.95523 4.33334 6.875 4.49411"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ChevronDoubleRightIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10.21 14.77C10.0722 14.6267 9.99685 14.4346 10.0006 14.2359C10.0043 14.0371 10.0869 13.848 10.23 13.71L14.168 10L10.23 6.29001C10.1556 6.22257 10.0956 6.1409 10.0534 6.04983C10.0112 5.95875 9.9877 5.86014 9.98431 5.75982C9.98093 5.65951 9.99771 5.55953 10.0337 5.46582C10.0696 5.37211 10.124 5.28657 10.1936 5.21427C10.2633 5.14196 10.3467 5.08437 10.439 5.04491C10.5313 5.00544 10.6305 4.9849 10.7309 4.9845C10.8313 4.98411 10.9307 5.00386 11.0233 5.0426C11.1159 5.08133 11.1998 5.13826 11.27 5.21001L15.77 9.46001C15.8426 9.52997 15.9003 9.61385 15.9398 9.70663C15.9792 9.79941 15.9995 9.89919 15.9995 10C15.9995 10.1008 15.9792 10.2006 15.9398 10.2934C15.9003 10.3862 15.8426 10.47 15.77 10.54L11.27 14.79C11.1267 14.9278 10.9346 15.0032 10.7359 14.9994C10.5371 14.9957 10.348 14.9131 10.21 14.77Z"
+        fill={color}
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M4.20999 14.77C4.07216 14.6267 3.99685 14.4346 4.0006 14.2359C4.00435 14.0371 4.08686 13.848 4.22999 13.71L8.16799 10L4.22999 6.29001C4.15565 6.22257 4.0956 6.1409 4.0534 6.04983C4.0112 5.95875 3.9877 5.86014 3.98431 5.75982C3.98093 5.65951 3.99771 5.55953 4.03366 5.46582C4.06962 5.37211 4.12402 5.28657 4.19365 5.21427C4.26327 5.14196 4.3467 5.08437 4.43899 5.04491C4.53127 5.00544 4.63055 4.9849 4.73092 4.9845C4.83129 4.98411 4.93072 5.00386 5.02332 5.0426C5.11592 5.08133 5.1998 5.13826 5.26999 5.21001L9.76999 9.46001C9.84258 9.52997 9.90032 9.61385 9.93975 9.70663C9.97919 9.79941 9.99951 9.89919 9.99951 10C9.99951 10.1008 9.97919 10.2006 9.93975 10.2934C9.90032 10.3862 9.84258 10.47 9.76999 10.54L5.26999 14.79C5.12673 14.9278 4.93462 15.0032 4.73585 14.9994C4.53709 14.9957 4.34795 14.9131 4.20999 14.77Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const ChevronDoubleLeftIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M15.79 14.77C15.6521 14.9131 15.4629 14.9957 15.2641 14.9994C15.0654 15.0032 14.8733 14.9278 14.73 14.79L10.23 10.54C10.1574 10.47 10.0997 10.3862 10.0602 10.2934C10.0208 10.2006 10.0005 10.1008 10.0005 10C10.0005 9.89919 10.0208 9.79941 10.0602 9.70663C10.0997 9.61385 10.1574 9.52997 10.23 9.46001L14.73 5.21001C14.8002 5.13826 14.8841 5.08133 14.9767 5.0426C15.0693 5.00386 15.1687 4.98411 15.2691 4.9845C15.3695 4.9849 15.4687 5.00544 15.561 5.04491C15.6533 5.08437 15.7367 5.14196 15.8064 5.21427C15.876 5.28657 15.9304 5.37211 15.9663 5.46582C16.0023 5.55953 16.0191 5.65951 16.0157 5.75982C16.0123 5.86014 15.9888 5.95875 15.9466 6.04983C15.9044 6.1409 15.8444 6.22257 15.77 6.29001L11.832 10L15.77 13.71C15.9131 13.848 15.9957 14.0371 15.9994 14.2359C16.0032 14.4346 15.9278 14.6267 15.79 14.77ZM9.79001 14.77C9.65205 14.9131 9.46291 14.9957 9.26415 14.9994C9.06539 15.0032 8.87327 14.9278 8.73001 14.79L4.23001 10.54C4.15742 10.47 4.09968 10.3862 4.06025 10.2934C4.02081 10.2006 4.00049 10.1008 4.00049 10C4.00049 9.89919 4.02081 9.79941 4.06025 9.70663C4.09968 9.61385 4.15742 9.52997 4.23001 9.46001L8.73001 5.21001C8.8002 5.13826 8.88408 5.08133 8.97668 5.0426C9.06928 5.00386 9.16871 4.98411 9.26908 4.9845C9.36945 4.9849 9.46873 5.00544 9.56102 5.04491C9.6533 5.08437 9.73673 5.14196 9.80635 5.21427C9.87598 5.28657 9.93038 5.37211 9.96634 5.46582C10.0023 5.55953 10.0191 5.65951 10.0157 5.75982C10.0123 5.86014 9.98881 5.95875 9.9466 6.04983C9.9044 6.1409 9.84435 6.22257 9.77001 6.29001L5.83201 10L9.77001 13.71C9.91314 13.848 9.99565 14.0371 9.9994 14.2359C10.0032 14.4346 9.92784 14.6267 9.79001 14.77Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const ArrowUpRightIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5.75 14.25L14.25 5.75M14.25 5.75H6.74997M14.25 5.75V13.25"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const CheveronDownIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M15 8L10 13L5 8"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const ShoppingCartIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M2.07951 2.03479C1.91701 2.03479 1.76116 2.09934 1.64626 2.21425C1.53135 2.32915 1.4668 2.485 1.4668 2.6475C1.4668 2.81 1.53135 2.96585 1.64626 3.08075C1.76116 3.19566 1.91701 3.26021 2.07951 3.26021H3.2118C3.35068 3.26021 3.47159 3.35334 3.50753 3.48732L5.59728 11.3235C4.94092 11.4945 4.35982 11.8784 3.945 12.415C3.53018 12.9517 3.30507 13.6107 3.30493 14.289C3.30493 14.6272 3.57942 14.9017 3.91764 14.9017H16.7846C16.9471 14.9017 17.1029 14.8372 17.2178 14.7222C17.3327 14.6073 17.3973 14.4515 17.3973 14.289C17.3973 14.1265 17.3327 13.9707 17.2178 13.8557C17.1029 13.7408 16.9471 13.6763 16.7846 13.6763H4.63492C4.76165 13.3178 4.99643 13.0075 5.30691 12.788C5.61738 12.5685 5.98827 12.4508 6.36848 12.4509H15.533C15.6478 12.4509 15.7602 12.4186 15.8576 12.3578C15.955 12.297 16.0333 12.2101 16.0836 12.1069C17.0163 10.1929 17.8241 8.22048 18.5018 6.20204C18.5286 6.12219 18.5386 6.03768 18.5312 5.95378C18.5239 5.86988 18.4993 5.7884 18.4591 5.71442C18.4188 5.64045 18.3638 5.57556 18.2973 5.52381C18.2309 5.47207 18.1545 5.43458 18.0729 5.41368C13.7641 4.31501 9.3275 3.79928 4.88164 3.88027L4.6921 3.17198C4.60515 2.84581 4.41288 2.55749 4.14519 2.35185C3.87749 2.1462 3.54936 2.03474 3.2118 2.03479H2.07951ZM3.30493 16.7398C3.30493 16.4148 3.43403 16.1031 3.66385 15.8733C3.89366 15.6435 4.20535 15.5144 4.53035 15.5144C4.85535 15.5144 5.16704 15.6435 5.39685 15.8733C5.62666 16.1031 5.75577 16.4148 5.75577 16.7398C5.75577 17.0648 5.62666 17.3765 5.39685 17.6063C5.16704 17.8362 4.85535 17.9653 4.53035 17.9653C4.20535 17.9653 3.89366 17.8362 3.66385 17.6063C3.43403 17.3765 3.30493 17.0648 3.30493 16.7398ZM13.721 16.7398C13.721 16.4148 13.8501 16.1031 14.0799 15.8733C14.3097 15.6435 14.6214 15.5144 14.9464 15.5144C15.2714 15.5144 15.5831 15.6435 15.8129 15.8733C16.0427 16.1031 16.1718 16.4148 16.1718 16.7398C16.1718 17.0648 16.0427 17.3765 15.8129 17.6063C15.5831 17.8362 15.2714 17.9653 14.9464 17.9653C14.6214 17.9653 14.3097 17.8362 14.0799 17.6063C13.8501 17.3765 13.721 17.0648 13.721 16.7398Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const TagIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M4.78194 2C4.04412 2 3.33653 2.2931 2.81481 2.81481C2.2931 3.33653 2 4.04412 2 4.78194V7.98562C2.00016 8.7231 2.29314 9.43034 2.81455 9.95189L10.0476 17.1849C10.3059 17.4433 10.6126 17.6483 10.9502 17.7882C11.2878 17.928 11.6496 18 12.015 18C12.3804 18 12.7422 17.928 13.0797 17.7882C13.4173 17.6483 13.724 17.4433 13.9824 17.1849L17.1849 13.9824C17.4433 13.724 17.6483 13.4173 17.7882 13.0797C17.928 12.7422 18 12.3804 18 12.015C18 11.6496 17.928 11.2878 17.7882 10.9502C17.6483 10.6126 17.4433 10.3059 17.1849 10.0476L9.95189 2.81455C9.43062 2.29341 8.72383 2.00045 7.98673 2H4.78194ZM5.33833 6.4511C5.63345 6.4511 5.91649 6.33386 6.12518 6.12518C6.33386 5.91649 6.4511 5.63345 6.4511 5.33833C6.4511 5.0432 6.33386 4.76016 6.12518 4.55148C5.91649 4.34279 5.63345 4.22555 5.33833 4.22555C5.0432 4.22555 4.76016 4.34279 4.55148 4.55148C4.34279 4.76016 4.22555 5.0432 4.22555 5.33833C4.22555 5.63345 4.34279 5.91649 4.55148 6.12518C4.76016 6.33386 5.0432 6.4511 5.33833 6.4511Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const TerminalLineIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M5.625 6.25L8.125 8.125L5.625 10M9.375 10H11.875M4.375 16.875H15.625C16.1223 16.875 16.5992 16.6775 16.9508 16.3258C17.3025 15.9742 17.5 15.4973 17.5 15V5C17.5 4.50272 17.3025 4.02581 16.9508 3.67417C16.5992 3.32254 16.1223 3.125 15.625 3.125H4.375C3.87772 3.125 3.40081 3.32254 3.04917 3.67417C2.69754 4.02581 2.5 4.50272 2.5 5V15C2.5 15.4973 2.69754 15.9742 3.04917 16.3258C3.40081 16.6775 3.87772 16.875 4.375 16.875Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const LockClosedIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10 1C8.80653 1 7.66193 1.47411 6.81802 2.31802C5.97411 3.16193 5.5 4.30653 5.5 5.5V9H5C4.46957 9 3.96086 9.21071 3.58579 9.58579C3.21071 9.96086 3 10.4696 3 11V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H15C15.5304 19 16.0391 18.7893 16.4142 18.4142C16.7893 18.0391 17 17.5304 17 17V11C17 10.4696 16.7893 9.96086 16.4142 9.58579C16.0391 9.21071 15.5304 9 15 9H14.5V5.5C14.5 4.30653 14.0259 3.16193 13.182 2.31802C12.3381 1.47411 11.1935 1 10 1ZM13 9V5.5C13 4.70435 12.6839 3.94129 12.1213 3.37868C11.5587 2.81607 10.7956 2.5 10 2.5C9.20435 2.5 8.44129 2.81607 7.87868 3.37868C7.31607 3.94129 7 4.70435 7 5.5V9H13Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const LockOpenIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M14.5 1C13.3065 1 12.1619 1.47411 11.318 2.31802C10.4741 3.16193 10 4.30653 10 5.5V9H3C2.46957 9 1.96086 9.21071 1.58579 9.58579C1.21071 9.96086 1 10.4696 1 11V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19H13C13.5304 19 14.0391 18.7893 14.4142 18.4142C14.7893 18.0391 15 17.5304 15 17V11C15 10.4696 14.7893 9.96086 14.4142 9.58579C14.0391 9.21071 13.5304 9 13 9H11.5V5.5C11.5 4.70435 11.8161 3.94129 12.3787 3.37868C12.9413 2.81607 13.7044 2.5 14.5 2.5C15.2956 2.5 16.0587 2.81607 16.6213 3.37868C17.1839 3.94129 17.5 4.70435 17.5 5.5V8.25C17.5 8.44891 17.579 8.63968 17.7197 8.78033C17.8603 8.92098 18.0511 9 18.25 9C18.4489 9 18.6397 8.92098 18.7803 8.78033C18.921 8.63968 19 8.44891 19 8.25V5.5C19 4.90905 18.8836 4.32389 18.6575 3.77792C18.4313 3.23196 18.0998 2.73588 17.682 2.31802C17.2641 1.90016 16.768 1.56869 16.2221 1.34254C15.6761 1.1164 15.0909 1 14.5 1Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const SquareTwoStackIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.75 6.875V5C13.75 4.50272 13.5525 4.02581 13.2008 3.67417C12.8492 3.32254 12.3723 3.125 11.875 3.125H5C4.50272 3.125 4.02581 3.32254 3.67417 3.67417C3.32254 4.02581 3.125 4.50272 3.125 5V11.875C3.125 12.3723 3.32254 12.8492 3.67417 13.2008C4.02581 13.5525 4.50272 13.75 5 13.75H6.875M13.75 6.875H15C15.4973 6.875 15.9742 7.07254 16.3258 7.42417C16.6775 7.77581 16.875 8.25272 16.875 8.75V15C16.875 15.4973 16.6775 15.9742 16.3258 16.3258C15.9742 16.6775 15.4973 16.875 15 16.875H8.75C8.25272 16.875 7.77581 16.6775 7.42417 16.3258C7.07254 15.9742 6.875 15.4973 6.875 15V13.75M13.75 6.875H8.75C8.25272 6.875 7.77581 7.07254 7.42417 7.42417C7.07254 7.77581 6.875 8.25272 6.875 8.75V13.75"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const PauseIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <rect x="4.75" y="3.125" width="3.5" height="13.75" rx="1" fill={color} />
+      <rect
+        x="11.75"
+        y="3.125"
+        width="3.5"
+        height="13.75"
+        rx="1"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const CheckStatusIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.857 8.191C13.9149 8.11129 13.9566 8.02095 13.9796 7.92514C14.0026 7.82933 14.0065 7.72994 13.991 7.63262C13.9756 7.5353 13.9412 7.44198 13.8897 7.35797C13.8382 7.27396 13.7707 7.20091 13.691 7.143C13.6113 7.08509 13.5209 7.04344 13.4251 7.02044C13.3293 6.99744 13.2299 6.99354 13.1326 7.00895C13.0353 7.02437 12.942 7.0588 12.858 7.11028C12.774 7.16176 12.7009 7.22929 12.643 7.309L9.16 12.099L7.28 10.219C7.21078 10.1474 7.128 10.0903 7.03647 10.051C6.94495 10.0118 6.84653 9.99114 6.74694 9.99032C6.64736 9.9895 6.54861 10.0085 6.45646 10.0463C6.3643 10.084 6.28059 10.1398 6.2102 10.2102C6.13982 10.2807 6.08417 10.3644 6.0465 10.4566C6.00883 10.5488 5.9899 10.6476 5.99081 10.7472C5.99173 10.8467 6.01246 10.9451 6.05181 11.0366C6.09116 11.1281 6.14834 11.2108 6.22 11.28L8.72 13.78C8.79663 13.8567 8.88896 13.9158 8.99065 13.9534C9.09233 13.9909 9.20094 14.006 9.30901 13.9975C9.41708 13.9891 9.52203 13.9573 9.61663 13.9044C9.71123 13.8515 9.79324 13.7787 9.857 13.691L13.857 8.191Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const InformationStatusIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M18 10C18 12.1217 17.1571 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18C7.87827 18 5.84344 17.1571 4.34315 15.6569C2.84285 14.1566 2 12.1217 2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10ZM11 6C11 6.26522 10.8946 6.51957 10.7071 6.70711C10.5196 6.89464 10.2652 7 10 7C9.73478 7 9.48043 6.89464 9.29289 6.70711C9.10536 6.51957 9 6.26522 9 6C9 5.73478 9.10536 5.48043 9.29289 5.29289C9.48043 5.10536 9.73478 5 10 5C10.2652 5 10.5196 5.10536 10.7071 5.29289C10.8946 5.48043 11 5.73478 11 6ZM9 9C8.80109 9 8.61032 9.07902 8.46967 9.21967C8.32902 9.36032 8.25 9.55109 8.25 9.75C8.25 9.94891 8.32902 10.1397 8.46967 10.2803C8.61032 10.421 8.80109 10.5 9 10.5H9.253C9.29041 10.5 9.32734 10.5084 9.36106 10.5246C9.39479 10.5408 9.42445 10.5643 9.44787 10.5935C9.47128 10.6227 9.48785 10.6567 9.49636 10.6932C9.50486 10.7296 9.50508 10.7675 9.497 10.804L9.038 12.87C8.98108 13.1259 8.98237 13.3913 9.04179 13.6466C9.10121 13.902 9.21723 14.1407 9.38129 14.3452C9.54535 14.5496 9.75325 14.7146 9.98963 14.828C10.226 14.9413 10.4848 15.0001 10.747 15H11C11.1989 15 11.3897 14.921 11.5303 14.7803C11.671 14.6397 11.75 14.4489 11.75 14.25C11.75 14.0511 11.671 13.8603 11.5303 13.7197C11.3897 13.579 11.1989 13.5 11 13.5H10.747C10.7096 13.5 10.6727 13.4916 10.6389 13.4754C10.6052 13.4592 10.5755 13.4357 10.5521 13.4065C10.5287 13.3773 10.5121 13.3433 10.5036 13.3068C10.4951 13.2704 10.4949 13.2325 10.503 13.196L10.962 11.13C11.0189 10.8741 11.0176 10.6087 10.9582 10.3534C10.8988 10.098 10.7828 9.8593 10.6187 9.65483C10.4547 9.45036 10.2468 9.28536 10.0104 9.17201C9.77398 9.05867 9.51515 8.99989 9.253 9H9Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const ExclamationStatusIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M18 10C18 12.1217 17.1571 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18C7.87827 18 5.84344 17.1571 4.34315 15.6569C2.84285 14.1566 2 12.1217 2 10C2 7.87827 2.84285 5.84344 4.34315 4.34315C5.84344 2.84285 7.87827 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10ZM10 5C10.1989 5 10.3897 5.07902 10.5303 5.21967C10.671 5.36032 10.75 5.55109 10.75 5.75V10.25C10.75 10.4489 10.671 10.6397 10.5303 10.7803C10.3897 10.921 10.1989 11 10 11C9.80109 11 9.61032 10.921 9.46967 10.7803C9.32902 10.6397 9.25 10.4489 9.25 10.25V5.75C9.25 5.55109 9.32902 5.36032 9.46967 5.21967C9.61032 5.07902 9.80109 5 10 5ZM10 15C10.2652 15 10.5196 14.8946 10.7071 14.7071C10.8946 14.5196 11 14.2652 11 14C11 13.7348 10.8946 13.4804 10.7071 13.2929C10.5196 13.1054 10.2652 13 10 13C9.73478 13 9.48043 13.1054 9.29289 13.2929C9.10536 13.4804 9 13.7348 9 14C9 14.2652 9.10536 14.5196 9.29289 14.7071C9.48043 14.8946 9.73478 15 10 15Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const ErrorStatusIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM8.28 7.22C8.13783 7.08752 7.94978 7.0154 7.75548 7.01883C7.56118 7.02225 7.37579 7.10097 7.23838 7.23838C7.10097 7.37579 7.02225 7.56118 7.01883 7.75548C7.0154 7.94978 7.08752 8.13783 7.22 8.28L8.94 10L7.22 11.72C7.14631 11.7887 7.08721 11.8715 7.04622 11.9635C7.00523 12.0555 6.98319 12.1548 6.98141 12.2555C6.97963 12.3562 6.99816 12.4562 7.03588 12.5496C7.0736 12.643 7.12974 12.7278 7.20096 12.799C7.27218 12.8703 7.35701 12.9264 7.4504 12.9641C7.54379 13.0018 7.64382 13.0204 7.74452 13.0186C7.84523 13.0168 7.94454 12.9948 8.03654 12.9538C8.12854 12.9128 8.21134 12.8537 8.28 12.78L10 11.06L11.72 12.78C11.7887 12.8537 11.8715 12.9128 11.9635 12.9538C12.0555 12.9948 12.1548 13.0168 12.2555 13.0186C12.3562 13.0204 12.4562 13.0018 12.5496 12.9641C12.643 12.9264 12.7278 12.8703 12.799 12.799C12.8703 12.7278 12.9264 12.643 12.9641 12.5496C13.0018 12.4562 13.0204 12.3562 13.0186 12.2555C13.0168 12.1548 12.9948 12.0555 12.9538 11.9635C12.9128 11.8715 12.8537 11.7887 12.78 11.72L11.06 10L12.78 8.28C12.9125 8.13783 12.9846 7.94978 12.9812 7.75548C12.9777 7.56118 12.899 7.37579 12.7616 7.23838C12.6242 7.10097 12.4388 7.02225 12.2445 7.01883C12.0502 7.0154 11.8622 7.08752 11.72 7.22L10 8.94L8.28 7.22Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const SpinnerIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M14.8649 14.8649C15.3023 15.3023 15.3063 16.0188 14.8121 16.3909C14.0399 16.9723 13.1661 17.4109 12.2319 17.6823C10.9379 18.0583 9.56991 18.1013 8.25485 17.8073C6.93979 17.5134 5.72029 16.892 4.7095 16.0009C3.69872 15.1098 2.92941 13.9778 2.47295 12.7099C2.0165 11.4421 1.8877 10.0794 2.09849 8.74852C2.30929 7.4176 2.85286 6.16149 3.67876 5.09674C4.50466 4.032 5.58613 3.19312 6.82282 2.65796C7.71563 2.27161 8.66846 2.05258 9.6341 2.00837C10.252 1.98008 10.7057 2.53472 10.6475 3.15053C10.5893 3.76635 10.0393 4.20701 9.42382 4.26889C8.83606 4.32798 8.25864 4.47736 7.71243 4.71373C6.82201 5.09905 6.04336 5.70304 5.44871 6.46966C4.85406 7.23627 4.46269 8.14067 4.31091 9.09894C4.15914 10.0572 4.25188 11.0383 4.58053 11.9511C4.90917 12.864 5.46308 13.679 6.19084 14.3206C6.91861 14.9623 7.79665 15.4096 8.74349 15.6213C9.69034 15.8329 10.6753 15.802 11.607 15.5313C12.1785 15.3652 12.7186 15.1123 13.2092 14.7832C13.7229 14.4385 14.4275 14.4275 14.8649 14.8649Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const DiscordIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.9953 12.4963C12.1086 12.4963 11.3775 11.6825 11.3775 10.6825C11.3775 9.68246 12.0938 8.86865 12.9953 8.86865C13.8968 8.86865 14.6268 9.69034 14.613 10.6825C14.5992 11.6746 13.9037 12.4963 12.9953 12.4963ZM7.01487 12.4963C6.12815 12.4963 5.3971 11.6825 5.3971 10.6825C5.3971 9.68246 6.11337 8.86865 7.01487 8.86865C7.91636 8.86865 8.64642 9.69034 8.63263 10.6825C8.61884 11.6746 7.91538 12.4963 7.01487 12.4963ZM16.2357 4.27644C15.069 3.74094 13.8376 3.35909 12.5726 3.14046C12.5611 3.13818 12.5492 3.13962 12.5385 3.14458C12.5279 3.14954 12.5191 3.15776 12.5135 3.16805C12.3458 3.4725 12.1935 3.78522 12.0573 4.10501C10.6937 3.89791 9.3066 3.89791 7.94296 4.10501C7.80595 3.78441 7.65136 3.47162 7.4799 3.16805C7.47394 3.15806 7.46512 3.1501 7.45458 3.14518C7.44404 3.14026 7.43227 3.13862 7.42078 3.14046C6.15564 3.35863 4.92426 3.7405 3.75767 4.27644C3.74785 4.28075 3.73959 4.28797 3.73402 4.29713C1.40097 7.78291 0.761549 11.183 1.07387 14.5436C1.07476 14.5519 1.07732 14.5599 1.08138 14.5672C1.08545 14.5745 1.09093 14.5809 1.09752 14.586C2.45592 15.5924 3.97543 16.3606 5.59119 16.858C5.60256 16.8614 5.61469 16.8612 5.62596 16.8575C5.63724 16.8538 5.64711 16.8467 5.65425 16.8373C6.00123 16.3649 6.30868 15.8646 6.57348 15.3417C6.57701 15.3345 6.57899 15.3267 6.57929 15.3187C6.5796 15.3107 6.57822 15.3027 6.57525 15.2953C6.57228 15.2878 6.56778 15.2811 6.56204 15.2755C6.55631 15.2699 6.54946 15.2656 6.54195 15.2629C6.05702 15.0773 5.58757 14.8536 5.13798 14.5939C5.1293 14.5892 5.12196 14.5823 5.11666 14.574C5.11135 14.5657 5.10826 14.5561 5.10766 14.5463C5.10707 14.5364 5.109 14.5266 5.11328 14.5177C5.11755 14.5087 5.12401 14.5011 5.13207 14.4954C5.2306 14.4244 5.32124 14.3515 5.4109 14.2766C5.41886 14.27 5.42854 14.2657 5.43883 14.2643C5.44911 14.2629 5.45958 14.2645 5.46903 14.2688C8.41391 15.6136 11.6031 15.6136 14.5135 14.2688C14.523 14.2641 14.5336 14.2623 14.5441 14.2635C14.5546 14.2648 14.5645 14.269 14.5726 14.2757C14.6623 14.3495 14.7569 14.4244 14.8524 14.4944C14.8605 14.5 14.8671 14.5076 14.8714 14.5165C14.8758 14.5253 14.8778 14.5351 14.8773 14.545C14.8768 14.5549 14.8738 14.5644 14.8686 14.5728C14.8634 14.5812 14.8561 14.5881 14.8475 14.5929C14.4006 14.8534 13.9327 15.0759 13.4485 15.2579C13.4409 15.2608 13.4341 15.2652 13.4283 15.2709C13.4226 15.2766 13.4182 15.2834 13.4153 15.291C13.4124 15.2985 13.4111 15.3066 13.4116 15.3146C13.4121 15.3227 13.4142 15.3306 13.4179 15.3377C13.6867 15.858 13.9933 16.3579 14.3352 16.8333C14.3421 16.8431 14.3519 16.8504 14.3632 16.8543C14.3745 16.8582 14.3868 16.8585 14.3983 16.855C16.0168 16.3592 17.5388 15.5909 18.8988 14.583C18.9055 14.5782 18.911 14.572 18.9151 14.5649C18.9192 14.5578 18.9217 14.5498 18.9225 14.5417C19.2978 10.6598 18.2939 7.28734 16.2623 4.29516C16.2563 4.2861 16.2462 4.27947 16.2357 4.27644Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const JavaScriptIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M15 1H5C2.79086 1 1 2.79086 1 5V15C1 17.2091 2.79086 19 5 19H15C17.2091 19 19 17.2091 19 15V5C19 2.79086 17.2091 1 15 1Z"
+        fill="#F7DF1E"
+      />
+      <path
+        d="M11.9372 13.9485C12.3039 14.5459 12.7811 14.9851 13.6251 14.9851C14.3341 14.9851 14.787 14.6316 14.787 14.1431C14.787 13.5578 14.3216 13.3505 13.5413 13.0099L13.1135 12.8268C11.8788 12.302 11.0585 11.6446 11.0585 10.2548C11.0585 8.97459 12.0363 8 13.5644 8C14.6523 8 15.4344 8.37773 15.998 9.36674L14.6656 10.2202C14.3722 9.69544 14.0557 9.4887 13.5644 9.4887C13.0632 9.4887 12.7456 9.80588 12.7456 10.2202C12.7456 10.7323 13.0635 10.9396 13.7976 11.2568L14.2254 11.4396C15.6792 12.0616 16.5 12.6956 16.5 14.1212C16.5 15.658 15.2899 16.5 13.6647 16.5C12.0756 16.5 11.049 15.7445 10.5467 14.7544L11.9372 13.9485ZM5.89281 14.0964C6.1616 14.5722 6.40611 14.9744 6.99399 14.9744C7.55614 14.9744 7.91078 14.755 7.91078 13.9018V8.09746H9.6218V13.9248C9.6218 15.6924 8.58305 16.4968 7.06682 16.4968C5.69685 16.4968 4.90348 15.7895 4.5 14.9376L5.89281 14.0964Z"
+        fill="black"
+      />
+    </svg>
+  );
+};
+
+export const JavaScriptExIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M5 1H15C17.2091 1 19 2.79086 19 5V15C19 17.2091 17.2091 19 15 19H5C2.79086 19 1 17.2091 1 15V5C1 2.79086 2.79086 1 5 1ZM13.6251 14.9851C12.7811 14.9851 12.3039 14.5459 11.9372 13.9485L10.5467 14.7544C11.049 15.7445 12.0756 16.5 13.6647 16.5C15.2899 16.5 16.5 15.658 16.5 14.1212C16.5 12.6956 15.6792 12.0616 14.2254 11.4396L13.7976 11.2568C13.0635 10.9396 12.7456 10.7323 12.7456 10.2202C12.7456 9.80588 13.0632 9.4887 13.5644 9.4887C14.0557 9.4887 14.3722 9.69544 14.6656 10.2202L15.998 9.36674C15.4344 8.37773 14.6523 8 13.5644 8C12.0363 8 11.0585 8.97459 11.0585 10.2548C11.0585 11.6446 11.8788 12.302 13.1135 12.8268L13.5413 13.0099C14.3216 13.3505 14.787 13.5578 14.787 14.1431C14.787 14.6316 14.3341 14.9851 13.6251 14.9851ZM6.99399 14.9744C6.40612 14.9744 6.1616 14.5722 5.89281 14.0964L4.5 14.9376C4.90348 15.7895 5.69685 16.4968 7.06682 16.4968C8.58305 16.4968 9.6218 15.6924 9.6218 13.9248V8.09746H7.91078V13.9018C7.91078 14.755 7.55614 14.9744 6.99399 14.9744Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const NextJSIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M9.41129 1.01314C9.37262 1.01666 9.24959 1.02896 9.13885 1.03775C6.585 1.268 4.19285 2.64599 2.67777 4.76395C1.8341 5.94157 1.2945 7.27737 1.09062 8.69227C1.01855 9.18617 1.00977 9.33206 1.00977 10.0017C1.00977 10.6714 1.01855 10.8173 1.09062 11.3112C1.57924 14.6876 3.98194 17.5244 7.2406 18.5755C7.82414 18.7636 8.43931 18.8919 9.13885 18.9692C9.41129 18.9991 10.5889 18.9991 10.8613 18.9692C12.0688 18.8356 13.0918 18.5368 14.1007 18.0218C14.2553 17.9427 14.2852 17.9216 14.2641 17.9041C14.2501 17.8935 13.591 17.0094 12.8 15.9408L11.3623 13.9986L9.56069 11.3323C8.56938 9.86638 7.75383 8.66767 7.7468 8.66767C7.73977 8.66591 7.73274 9.85056 7.72923 11.2971C7.72395 13.8299 7.7222 13.9318 7.69056 13.9916C7.64486 14.0777 7.60971 14.1128 7.53589 14.1515C7.47964 14.1796 7.43043 14.1849 7.16502 14.1849H6.86095L6.7801 14.1339C6.72737 14.1005 6.6887 14.0566 6.66234 14.0056L6.62543 13.9265L6.62894 10.4025L6.63422 6.87663L6.6887 6.80808C6.71683 6.77117 6.77659 6.72372 6.81877 6.70087C6.89083 6.66571 6.91895 6.6622 7.22303 6.6622C7.58158 6.6622 7.64134 6.67626 7.7345 6.7782C7.76086 6.80632 8.73635 8.27571 9.90343 10.0457C11.0705 11.8156 12.6664 14.2324 13.4503 15.4188L14.874 17.5754L14.9461 17.5279C15.5841 17.1131 16.2591 16.5226 16.7934 15.9074C17.9306 14.6015 18.6635 13.009 18.9096 11.3112C18.9816 10.8173 18.9904 10.6714 18.9904 10.0017C18.9904 9.33206 18.9816 9.18617 18.9096 8.69227C18.421 5.31585 16.0183 2.47901 12.7596 1.42794C12.1848 1.24163 11.5732 1.11333 10.8877 1.03599C10.719 1.01841 9.55717 0.999079 9.41129 1.01314ZM13.0918 6.45128C13.1762 6.49346 13.2447 6.57432 13.2693 6.65868C13.2834 6.70438 13.2869 7.68163 13.2834 9.88395L13.2781 13.0442L12.7209 12.19L12.162 11.3358V9.03853C12.162 7.55332 12.169 6.71844 12.1796 6.67802C12.2077 6.57959 12.2692 6.50225 12.3536 6.45655C12.4256 6.41964 12.452 6.41613 12.728 6.41613C12.9881 6.41613 13.0338 6.41964 13.0918 6.45128Z"
+        fill="black"
+      />
+      <path
+        d="M14.7861 17.6141C14.7246 17.6527 14.7053 17.6791 14.7598 17.6492C14.7984 17.6264 14.8617 17.5789 14.8512 17.5771C14.8459 17.5771 14.816 17.5947 14.7861 17.6141ZM14.6648 17.6932C14.6332 17.7178 14.6332 17.7195 14.6719 17.7002C14.693 17.6896 14.7105 17.6773 14.7105 17.6738C14.7105 17.6598 14.7018 17.6633 14.6648 17.6932ZM14.577 17.7459C14.5453 17.7705 14.5453 17.7722 14.584 17.7529C14.6051 17.7424 14.6227 17.7301 14.6227 17.7265C14.6227 17.7125 14.6139 17.716 14.577 17.7459ZM14.4891 17.7986C14.4574 17.8232 14.4574 17.825 14.4961 17.8056C14.5172 17.7951 14.5348 17.7828 14.5348 17.7793C14.5348 17.7652 14.526 17.7687 14.4891 17.7986ZM14.3555 17.8689C14.2887 17.9041 14.2922 17.9181 14.359 17.8847C14.3889 17.8689 14.4117 17.8531 14.4117 17.8496C14.4117 17.8373 14.41 17.839 14.3555 17.8689Z"
+        fill="black"
+      />
+    </svg>
+  );
+};
+
+export const TailwindCssIcon: React.FC<Props> = ({
+  w = '18',
+  h = '12',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 18 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <mask
+        id="mask0_30_2891"
+        style={{ maskType: 'luminance' }}
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width={w}
+        height={h}
+      >
+        <path d="M0 0.599976H18V11.4H0V0.599976Z" fill="white" />
+      </mask>
+      <g mask="url(#mask0_30_2891)">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M9 0.599976C6.6 0.599976 5.1 1.79998 4.5 4.19998C5.4 2.99998 6.45 2.54998 7.65 2.84998C8.33467 3.02098 8.824 3.51798 9.36567 4.06764C10.248 4.96331 11.2693 5.99998 13.5 5.99998C15.9 5.99998 17.4 4.79998 18 2.39998C17.1 3.59998 16.05 4.04998 14.85 3.74998C14.1653 3.57898 13.676 3.08198 13.1343 2.53231C12.252 1.63664 11.2307 0.599976 9 0.599976ZM4.5 5.99998C2.1 5.99998 0.6 7.19998 0 9.59998C0.9 8.39998 1.95 7.94998 3.15 8.24998C3.83467 8.42131 4.324 8.91798 4.86567 9.46764C5.748 10.3633 6.76933 11.4 9 11.4C11.4 11.4 12.9 10.2 13.5 7.79998C12.6 8.99998 11.55 9.44998 10.35 9.14998C9.66533 8.97898 9.176 8.48198 8.63433 7.93231C7.752 7.03664 6.73067 5.99998 4.5 5.99998Z"
+          fill="#38BDF8"
+        />
+      </g>
+    </svg>
   );
 };
 
 export const TwitterIcon: React.FC<Props> = ({
-  solid = true,
-  w = '24',
-  h = '24',
+  w = '20',
+  h = '20',
+  color = '#030712',
   ...props
 }) => {
   return (
-    <>
-      {solid ? (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 24 24"
+      fill="none"
+      shape-rendering="geometricPrecision"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      {...props}
+    >
+      <path
+        fill={color}
+        stroke="none"
+        d="M16.99 0H20.298L13.071 8.26L21.573 19.5H14.916L9.702 12.683L3.736 19.5H0.426L8.156 10.665L0 0H6.826L11.539 6.231L16.99 0ZM15.829 17.52H17.662L5.83 1.876H3.863L15.829 17.52Z"
+      />
+    </svg>
+  );
+};
+
+export const GitHubIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10 1.22205C5.0275 1.22205 1 5.24955 1 10.222C1 14.2045 3.57625 17.5683 7.15375 18.7608C7.60375 18.8395 7.7725 18.5695 7.7725 18.3333C7.7725 18.1195 7.76125 17.4108 7.76125 16.657C5.5 17.0733 4.915 16.1058 4.735 15.5995C4.63375 15.3408 4.195 14.542 3.8125 14.3283C3.4975 14.1595 3.0475 13.7433 3.80125 13.732C4.51 13.7208 5.01625 14.3845 5.185 14.6545C5.995 16.0158 7.28875 15.6333 7.80625 15.397C7.885 14.812 8.12125 14.4183 8.38 14.1933C6.3775 13.9683 4.285 13.192 4.285 9.74955C4.285 8.7708 4.63375 7.9608 5.2075 7.3308C5.1175 7.1058 4.8025 6.1833 5.2975 4.9458C5.2975 4.9458 6.05125 4.70955 7.7725 5.8683C8.4925 5.6658 9.2575 5.56455 10.0225 5.56455C10.7875 5.56455 11.5525 5.6658 12.2725 5.8683C13.9938 4.6983 14.7475 4.9458 14.7475 4.9458C15.2425 6.1833 14.9275 7.1058 14.8375 7.3308C15.4113 7.9608 15.76 8.75955 15.76 9.74955C15.76 13.2033 13.6562 13.9683 11.6538 14.1933C11.98 14.4745 12.2613 15.0145 12.2613 15.8583C12.2613 17.062 12.25 18.0295 12.25 18.3333C12.25 18.5695 12.4188 18.8508 12.8688 18.7608C16.4238 17.5683 19 14.1933 19 10.222C19 5.24955 14.9725 1.22205 10 1.22205Z"
+        fill="#1B1F23"
+      />
+    </svg>
+  );
+};
+
+export const ReactJSIcon: React.FC<Props> = ({
+  w = '16',
+  h = '14',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 16 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M8.01175 9.73579C11.9866 9.73579 15.2088 8.50548 15.2088 6.98782C15.2088 5.47016 11.9866 4.23986 8.01175 4.23986C4.03693 4.23986 0.814697 5.47016 0.814697 6.98782C0.814697 8.50548 4.03693 9.73579 8.01175 9.73579Z"
+        stroke={color}
+      />
+      <path
+        d="M5.63168 8.3618C7.61909 11.8041 10.2957 13.9795 11.61 13.2207C12.9243 12.4618 12.3787 9.05614 10.3913 5.61384C8.40389 2.17154 5.72729 -0.00384338 4.41296 0.754987C3.09863 1.51382 3.64427 4.91951 5.63168 8.3618Z"
+        stroke={color}
+      />
+      <path
+        d="M5.63177 5.61373C3.64436 9.05603 3.09872 12.4617 4.41305 13.2206C5.72739 13.9794 8.40398 11.804 10.3914 8.3617C12.3788 4.9194 12.9244 1.51371 11.6101 0.754885C10.2958 -0.00394544 7.61919 2.17144 5.63177 5.61373Z"
+        stroke={color}
+      />
+      <path
+        d="M8.00032 8.2078C8.6674 8.2078 9.20817 7.66703 9.20817 6.99996C9.20817 6.33288 8.6674 5.79211 8.00032 5.79211C7.33325 5.79211 6.79248 6.33288 6.79248 6.99996C6.79248 7.66703 7.33325 8.2078 8.00032 8.2078Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const VisaIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#1A1F71',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.834 7.19688L5.4775 12.8189H3.94L2.7805 8.33163C2.71 8.05563 2.64925 7.95438 2.43475 7.83813C2.08525 7.64838 1.50775 7.47063 1 7.35963L1.0345 7.19688H3.5095C3.67124 7.19672 3.8277 7.25438 3.95066 7.35946C4.07361 7.46453 4.15495 7.6101 4.18 7.76988L4.79275 11.0234L6.30625 7.19688H7.834ZM13.8588 10.9836C13.8647 9.49938 11.8068 9.41763 11.821 8.75463C11.8255 8.55288 12.0175 8.33838 12.4375 8.28363C12.9297 8.23689 13.4254 8.32395 13.8722 8.53563L14.1273 7.34313C13.6922 7.17959 13.2315 7.09502 12.7668 7.09338C11.329 7.09338 10.3173 7.85838 10.3083 8.95263C10.2993 9.76188 11.0305 10.2126 11.5817 10.4826C12.1488 10.7579 12.3392 10.9349 12.3363 11.1809C12.3325 11.5589 11.8848 11.7246 11.4662 11.7314C10.735 11.7426 10.3113 11.5341 9.97225 11.3766L9.709 12.6081C10.0487 12.7641 10.6757 12.9006 11.326 12.9066C12.8537 12.9066 13.8535 12.1521 13.8588 10.9836ZM17.6545 12.8189H19L17.8263 7.19688H16.5842C16.4515 7.19565 16.3215 7.23432 16.2111 7.30788C16.1006 7.38143 16.0148 7.48647 15.9647 7.60938L13.783 12.8189H15.31L15.6138 11.9789H17.4797L17.6545 12.8189ZM16.0322 10.8269L16.7972 8.71563L17.2382 10.8269H16.0322ZM9.91225 7.19688L8.71 12.8189H7.255L8.45875 7.19688H9.91225Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const GoogleIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M18.8221 10.2149C18.8221 9.60697 18.7633 8.97943 18.6652 8.39111H10.1738V11.8622H15.0373C14.8411 12.98 14.194 13.9605 13.2331 14.5881L16.1355 16.8433C17.8416 15.2548 18.8221 12.9408 18.8221 10.2149Z"
+        fill="#4280EF"
+      />
+      <path
+        d="M10.1741 19.0018C12.6058 19.0018 14.6454 18.1977 16.1358 16.825L13.2334 14.5894C12.4294 15.1385 11.39 15.4523 10.1741 15.4523C7.82086 15.4523 5.84019 13.8638 5.1146 11.7458L2.13379 14.0403C3.66342 17.0799 6.76189 19.0018 10.1741 19.0018Z"
+        fill="#34A353"
+      />
+      <path
+        d="M5.11481 11.7256C4.7422 10.6078 4.7422 9.39194 5.11481 8.27413L2.134 5.96008C0.859306 8.50946 0.859306 11.5099 2.134 14.0396L5.11481 11.7256Z"
+        fill="#F6B704"
+      />
+      <path
+        d="M10.1741 4.56764C11.4488 4.54803 12.7039 5.03829 13.6256 5.92077L16.1946 3.33217C14.5669 1.80255 12.4097 0.978901 10.1741 0.998511C6.76189 0.998511 3.66342 2.92035 2.13379 5.95999L5.1146 8.27404C5.84019 6.13649 7.82086 4.56764 10.1741 4.56764Z"
+        fill="#E54335"
+      />
+    </svg>
+  );
+};
+
+export const AppleIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#000000',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M13.2596 1.03816C12.4224 1.13484 11.2375 1.87332 10.6492 2.66322C10.3098 3.11577 10.1103 3.54775 9.93747 4.19778L9.85107 4.52279L9.85519 4.86837C9.8593 5.05762 9.86959 5.23453 9.87987 5.26333C9.90661 5.33121 9.95804 5.34149 10.3201 5.34355C10.6204 5.34561 10.6389 5.34355 10.8961 5.26744C11.5831 5.06791 12.0871 4.76758 12.445 4.34177C12.5314 4.23686 12.661 4.09698 12.7289 4.02704C12.9552 3.80488 13.2452 3.31119 13.4056 2.88333C13.5661 2.4534 13.6381 2.05434 13.6587 1.48659L13.671 1.1225L13.6175 1.06901C13.5579 1.00936 13.525 1.0073 13.2596 1.03816Z"
+        fill={color}
+      />
+      <path
+        d="M13.0682 5.28968C12.6609 5.31025 11.5645 5.61469 10.7766 5.92325C10.2994 6.11044 10.2994 6.11044 10.2048 6.1269C10.0402 6.15364 9.63703 6.03639 8.9438 5.75663C8.57559 5.61058 8.19709 5.4995 7.63758 5.37196C7.40308 5.32054 7.01429 5.31437 6.84562 5.36168C6.77773 5.38019 6.5638 5.42339 6.37044 5.4563C5.95492 5.53036 5.72041 5.60235 5.40774 5.75663C4.46356 6.21741 3.8197 6.87978 3.30956 7.91653C3.08328 8.37319 2.91666 8.81957 2.79324 9.29475C2.61016 10.0003 2.60605 11.3538 2.78501 12.1746C2.80558 12.2754 2.82409 12.3947 2.82409 12.442C2.82409 12.5408 2.84261 12.6148 3.0154 13.2957C3.17585 13.9252 3.15939 13.8737 3.46589 14.6431C3.89581 15.723 4.03158 15.9616 4.90994 17.1732C5.26992 17.669 5.453 17.8953 5.71836 18.1647C5.99606 18.4486 6.22027 18.6132 6.53706 18.7695C6.89499 18.9443 7.05132 18.9834 7.38045 18.9814C7.80214 18.9814 8.14155 18.895 8.78747 18.6234C9.19476 18.4527 9.2215 18.4445 9.96204 18.2923C10.1842 18.2449 10.3899 18.2491 10.7026 18.3005C10.8095 18.3169 10.97 18.3416 11.0564 18.354C11.2312 18.3787 11.4081 18.4363 11.8648 18.6193C12.4161 18.8415 12.8049 18.9402 13.2122 18.9649C13.8046 19.0019 14.3765 18.7386 14.9874 18.1524C15.6107 17.5497 16.1928 16.7248 16.7811 15.6119C16.9395 15.3116 17.1926 14.6965 17.2357 14.5114C17.2543 14.4374 17.2851 14.3448 17.3077 14.3078C17.3283 14.2707 17.3468 14.2193 17.3468 14.1967C17.3468 14.1226 17.1967 14.0054 16.9313 13.8717C16.4314 13.6145 15.9398 13.1743 15.6086 12.6786C15.3721 12.3227 15.1334 11.7899 15.0738 11.4752C14.973 10.9568 14.9442 10.3891 15.0018 9.99414C15.0162 9.89129 15.0676 9.6753 15.117 9.51074C15.3289 8.79694 15.4749 8.51101 15.8061 8.1572C15.9069 8.05229 15.9892 7.95561 15.9892 7.94738C15.9892 7.91241 16.4932 7.49072 16.6166 7.42284C16.6845 7.38375 16.7709 7.3241 16.8079 7.28707C16.921 7.17599 16.9046 7.13279 16.6207 6.79955C16.2401 6.35317 15.7608 5.98702 15.1972 5.71343C14.8455 5.5427 14.6027 5.45836 14.2633 5.38842C13.9157 5.31437 13.3973 5.27117 13.0682 5.28968Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const FacebookIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M1 10C1 14.455 4.24 18.145 8.515 18.91L8.56819 18.8665C8.56548 18.866 8.56277 18.8655 8.56006 18.865V12.52H6.31006V10H8.56006V8.02001C8.56006 5.77001 10.0001 4.51001 12.0701 4.51001C12.7001 4.51001 13.4201 4.60001 14.0501 4.69001V6.98501H12.8801C11.8001 6.98501 11.5301 7.52501 11.5301 8.24501V10H13.9151L13.5101 12.52H11.5301V18.865C11.5026 18.87 11.4752 18.8748 11.4478 18.8796L11.485 18.91C15.76 18.145 19 14.455 19 10C19 5.05 14.95 1 10 1C5.05 1 1 5.05 1 10Z"
+        fill="url(#paint0_linear_1_6212)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1_6212"
+          x1="10.0004"
+          y1="18.374"
+          x2="10.0004"
+          y2="0.996685"
+          gradientUnits="userSpaceOnUse"
         >
-          <path
-            fill="var(--geist-fill, currentColor)"
-            stroke="none"
-            d="M16.99 0H20.298L13.071 8.26L21.573 19.5H14.916L9.702 12.683L3.736 19.5H0.426L8.156 10.665L0 0H6.826L11.539 6.231L16.99 0ZM15.829 17.52H17.662L5.83 1.876H3.863L15.829 17.52Z"
-          />
-        </svg>
-      ) : (
-        <svg
-          width={w}
-          height={h}
-          fill="none"
-          shapeRendering="geometricPrecision"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          {...props}
-        >
-          <path
-            fill="var(--geist-fill, currentColor)"
-            stroke="none"
-            d="M16.99 0H20.298L13.071 8.26L21.573 19.5H14.916L9.702 12.683L3.736 19.5H0.426L8.156 10.665L0 0H6.826L11.539 6.231L16.99 0ZM15.829 17.52H17.662L5.83 1.876H3.863L15.829 17.52Z"
-          />
-        </svg>
-      )}
-    </>
+          <stop stop-color="#0062E0" />
+          <stop offset="1" stop-color="#19AFFF" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export const StripeIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8.7941 6.55502C8.7941 5.82721 9.39972 5.54565 10.3783 5.54565C11.9978 5.58064 13.587 5.99186 15.0203 6.7468V2.35341C13.5424 1.77261 11.9661 1.48308 10.3783 1.50076C6.60644 1.50076 4.07666 3.47646 4.07666 6.77548C4.07666 11.937 11.1645 11.0987 11.1645 13.3236C11.1645 14.1938 10.4208 14.4636 9.37422 14.4636C7.83096 14.4636 5.83773 13.8251 4.27428 12.9751V17.4259C5.88396 18.1262 7.61933 18.4917 9.37475 18.5C13.2512 18.5 15.9234 16.5849 15.9234 13.2285C15.9234 7.65788 8.7941 8.6529 8.7941 6.55608V6.55502Z"
+        fill="#6772E5"
+      />
+    </svg>
+  );
+};
+
+export const TypeScriptIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M15 1H5C2.79086 1 1 2.79086 1 5V15C1 17.2091 2.79086 19 5 19H15C17.2091 19 19 17.2091 19 15V5C19 2.79086 17.2091 1 15 1Z"
+        fill="#3178C6"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M11.282 14.2073V16.0415C11.5594 16.1943 11.8876 16.3089 12.2664 16.3854C12.6452 16.4618 13.0444 16.5 13.4642 16.5C13.8732 16.5 14.2618 16.458 14.6299 16.3739C14.9981 16.2898 15.3209 16.1513 15.5983 15.9583C15.8758 15.7654 16.0954 15.5132 16.2572 15.2018C16.4191 14.8903 16.5 14.5054 16.5 14.0469C16.5 13.7144 16.4538 13.4231 16.3613 13.1728C16.2688 12.9225 16.1354 12.7 15.9611 12.5051C15.7869 12.3102 15.5779 12.1354 15.3342 11.9806C15.0906 11.8258 14.8158 11.6797 14.5099 11.5422C14.2858 11.4428 14.0849 11.3463 13.907 11.2527C13.7292 11.1591 13.578 11.0636 13.4535 10.9661C13.329 10.8687 13.233 10.7655 13.1654 10.6566C13.0978 10.5477 13.064 10.4245 13.064 10.2869C13.064 10.1608 13.0943 10.0471 13.1547 9.94588C13.2152 9.84461 13.3006 9.75771 13.4108 9.68509C13.5211 9.61251 13.6562 9.55612 13.8163 9.516C13.9764 9.47589 14.1542 9.45584 14.3499 9.45584C14.4921 9.45584 14.6424 9.46731 14.8007 9.49021C14.959 9.51315 15.1181 9.5485 15.2782 9.59624C15.4383 9.64402 15.5939 9.70421 15.7451 9.77679C15.8962 9.84941 16.0358 9.93346 16.1639 10.029V8.31523C15.9042 8.20825 15.6206 8.12897 15.3129 8.07738C15.0052 8.02579 14.6522 8 14.2538 8C13.8483 8 13.4642 8.04682 13.1014 8.14043C12.7386 8.23404 12.4194 8.38019 12.1437 8.57888C11.868 8.7776 11.6502 9.03073 11.4901 9.33835C11.33 9.64592 11.25 10.0137 11.25 10.4417C11.25 10.9881 11.3967 11.4543 11.6902 11.8402C11.9836 12.2261 12.4291 12.5528 13.0267 12.8203C13.2614 12.9235 13.4802 13.0247 13.6829 13.1241C13.8857 13.2234 14.0609 13.3266 14.2084 13.4336C14.3561 13.5406 14.4725 13.6571 14.5579 13.7832C14.6433 13.9093 14.686 14.0526 14.686 14.2131C14.686 14.3315 14.6593 14.4414 14.6059 14.5427C14.5526 14.6439 14.4717 14.7318 14.3632 14.8063C14.2547 14.8808 14.1195 14.9391 13.9577 14.9811C13.7958 15.0232 13.6065 15.0442 13.3895 15.0442C13.0196 15.0442 12.6532 14.9744 12.2904 14.835C11.9276 14.6955 11.5915 14.4863 11.282 14.2073ZM8.41295 9.68835H10.6023V8.18319H4.5V9.68835H6.67861V16.3901H8.41295V9.68835Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+
+export const MastercardIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M12.4285 5.57825H7.55737V14.4217H12.4285V5.57825Z"
+        fill="#FF5A00"
+      />
+      <path
+        d="M7.88151 10C7.88151 8.20328 8.71737 6.60862 10 5.57828C9.05604 4.82828 7.86529 4.375 6.56645 4.375C3.48959 4.375 1 6.89078 1 10C1 13.1092 3.48959 15.625 6.56645 15.625C7.86529 15.625 9.05604 15.1717 10 14.4217C8.71557 13.4059 7.88151 11.7967 7.88151 10Z"
+        fill="#EB001B"
+      />
+      <path
+        d="M19 10C19 13.1092 16.5104 15.625 13.4335 15.625C12.1347 15.625 10.944 15.1717 10 14.4217C11.2988 13.3896 12.1185 11.7967 12.1185 10C12.1185 8.20328 11.2826 6.60862 10 5.57828C10.9422 4.82828 12.1329 4.375 13.4317 4.375C16.5104 4.375 19 6.90716 19 10Z"
+        fill="#F79E1B"
+      />
+    </svg>
+  );
+};
+
+export const LinkedinIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#0077B5',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M15.25 1H4.75C2.67925 1 1 2.67925 1 4.75V15.25C1 17.3208 2.67925 19 4.75 19H15.25C17.3215 19 19 17.3208 19 15.25V4.75C19 2.67925 17.3215 1 15.25 1ZM7 15.25H4.75V7H7V15.25ZM5.875 6.049C5.1505 6.049 4.5625 5.4565 4.5625 4.726C4.5625 3.9955 5.1505 3.403 5.875 3.403C6.5995 3.403 7.1875 3.9955 7.1875 4.726C7.1875 5.4565 6.60025 6.049 5.875 6.049ZM16 15.25H13.75V11.047C13.75 8.521 10.75 8.71225 10.75 11.047V15.25H8.5V7H10.75V8.32375C11.797 6.38425 16 6.241 16 10.1808V15.25Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export const FigmaIcon: React.FC<Props> = ({
+  w = '12',
+  h = '18',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 12 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g clip-path="url(#clip0_30_1013)">
+        <path
+          d="M6 8.99998C6 7.36002 7.32946 6.03052 8.96946 6.03052C10.6094 6.03052 11.9389 7.36002 11.9389 8.99998C11.9389 10.64 10.6094 11.9694 8.96946 11.9694C7.32946 11.9694 6 10.64 6 8.99998Z"
+          fill="#1ABCFE"
+        />
+        <path
+          d="M0.0612793 14.9389C0.0612793 13.299 1.39075 11.9695 3.03074 11.9695H6.00019V14.9389C6.00019 16.5789 4.67074 17.9084 3.03074 17.9084C1.39075 17.9084 0.0612793 16.5789 0.0612793 14.9389Z"
+          fill="#0ACF83"
+        />
+        <path
+          d="M6 0.0916748V6.03057H8.96946C10.6095 6.03057 11.9389 4.70111 11.9389 3.06113C11.9389 1.42115 10.6095 0.0916748 8.96946 0.0916748H6Z"
+          fill="#FF7262"
+        />
+        <path
+          d="M0.0612793 3.06113C0.0612793 4.70112 1.39075 6.03057 3.03074 6.03057H6.00019V0.0916748H3.03074C1.39075 0.0916748 0.0612793 1.42115 0.0612793 3.06113Z"
+          fill="#F24E1E"
+        />
+        <path
+          d="M0.0612793 8.99998C0.0612793 10.64 1.39075 11.9694 3.03074 11.9694H6.00019V6.03052H3.03074C1.39075 6.03052 0.0612793 7.36002 0.0612793 8.99998Z"
+          fill="#A259FF"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_30_1013">
+          <rect width="12" height="18" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const MenuIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M3.125 5H16.875M3.125 9.99994H16.875M3.125 15H16.875"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const SettingsIcon: React.FC<Props> = ({
+  w = '20',
+  h = '20',
+  color = '#030712',
+  ...props
+}) => {
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M7.99509 3.28333C8.07009 2.83167 8.46176 2.5 8.92009 2.5H11.0809C11.5393 2.5 11.9309 2.83167 12.0059 3.28333L12.1834 4.35083C12.2359 4.6625 12.4443 4.9225 12.7209 5.07583C12.7826 5.10917 12.8434 5.145 12.9043 5.18167C13.1743 5.345 13.5043 5.39583 13.8001 5.285L14.8143 4.905C15.0221 4.82684 15.2509 4.82498 15.46 4.89976C15.6691 4.97454 15.8448 5.1211 15.9559 5.31333L17.0359 7.18583C17.1468 7.37809 17.1859 7.60344 17.1462 7.8218C17.1065 8.04017 16.9907 8.23737 16.8193 8.37833L15.9834 9.0675C15.7393 9.2675 15.6184 9.57833 15.6243 9.89417C15.6256 9.96499 15.6256 10.0358 15.6243 10.1067C15.6184 10.4217 15.7393 10.7317 15.9826 10.9317L16.8201 11.6217C17.1734 11.9133 17.2651 12.4167 17.0368 12.8133L15.9551 14.6858C15.8441 14.878 15.6686 15.0246 15.4597 15.0996C15.2508 15.1745 15.0221 15.1729 14.8143 15.095L13.8001 14.715C13.5043 14.6042 13.1751 14.655 12.9034 14.8183C12.843 14.8551 12.7819 14.8906 12.7201 14.925C12.4443 15.0775 12.2359 15.3375 12.1834 15.6492L12.0059 16.7158C11.9309 17.1683 11.5393 17.5 11.0809 17.5H8.91926C8.46092 17.5 8.06926 17.1683 7.99426 16.7167L7.81676 15.6492C7.76509 15.3375 7.55676 15.0775 7.28009 14.9242C7.2183 14.8901 7.15717 14.8548 7.09676 14.8183C6.82592 14.655 6.49676 14.6042 6.20009 14.715L5.18592 15.095C4.9782 15.1729 4.74956 15.1747 4.54067 15.0999C4.33178 15.0251 4.15618 14.8787 4.04509 14.6867L2.96426 12.8142C2.85338 12.6219 2.8143 12.3966 2.85397 12.1782C2.89364 11.9598 3.0095 11.7626 3.18092 11.6217L4.01759 10.9325C4.26092 10.7325 4.38176 10.4217 4.37592 10.1058C4.37462 10.035 4.37462 9.96416 4.37592 9.89333C4.38176 9.57833 4.26092 9.26833 4.01759 9.06833L3.18092 8.37833C3.00971 8.23741 2.89399 8.04036 2.85432 7.82219C2.81465 7.60401 2.8536 7.37884 2.96426 7.18667L4.04509 5.31417C4.15608 5.12178 4.33177 4.97505 4.54085 4.90011C4.74993 4.82518 4.97883 4.82691 5.18676 4.905L6.20009 5.285C6.49676 5.39583 6.82592 5.345 7.09676 5.18167C7.15676 5.145 7.21842 5.10917 7.28009 5.075C7.55676 4.9225 7.76509 4.6625 7.81676 4.35083L7.99509 3.28333V3.28333Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12.5 10C12.5 10.663 12.2366 11.2989 11.7678 11.7678C11.2989 12.2366 10.663 12.5 10 12.5C9.33696 12.5 8.70107 12.2366 8.23223 11.7678C7.76339 11.2989 7.5 10.663 7.5 10C7.5 9.33696 7.76339 8.70107 8.23223 8.23223C8.70107 7.76339 9.33696 7.5 10 7.5C10.663 7.5 11.2989 7.76339 11.7678 8.23223C12.2366 8.70107 12.5 9.33696 12.5 10V10Z"
+        stroke={color}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
   );
 };
